@@ -1,0 +1,1285 @@
+/* Services Page Styles */
+:root {
+    --scp-primary: #00aeff;
+    --scp-secondary: #6d9feb;
+    --scp-accent: #06b6d4;
+    --scp-success: #10b981;
+    --scp-warning: #f59e0b;
+    --scp-danger: #ef4444;
+    --scp-dark: #0f172a;
+    --scp-light: #f8fafc;
+    --scp-gray-50: #f9fafb;
+    --scp-gray-100: #f3f4f6;
+    --scp-gray-200: #e5e7eb;
+    --scp-gray-300: #d1d5db;
+    --scp-gray-400: #9ca3af;
+    --scp-gray-500: #6b7280;
+    --scp-gray-600: #4b5563;
+    --scp-gray-700: #374151;
+    --scp-gray-800: #1f2937;
+    --scp-gray-900: #111827;
+}
+
+/* Service Categories Section */
+.scp-services-main {
+    padding: 120px 0;
+    background: linear-gradient(135deg, var(--scp-light) 0%, #ffffff 50%, var(--scp-gray-50) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-services-main::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: scpFloat 8s ease-in-out infinite;
+}
+
+.scp-services-main::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: scpFloat 8s ease-in-out infinite reverse;
+}
+
+.scp-services-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-services-subtitle {
+    font-size: 1.2rem;
+    color: var(--scp-gray-600);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-service-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.scp-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.05) 0%, 
+        rgba(236, 72, 153, 0.05) 50%, 
+        rgba(6, 182, 212, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.scp-service-card:hover::before {
+    opacity: 1;
+}
+
+.scp-service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.scp-service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-service-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.scp-service-card:hover .scp-service-icon::before {
+    left: 100%;
+}
+
+.scp-service-card:hover .scp-service-icon {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+}
+
+.scp-service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--scp-dark);
+    margin-bottom: 1rem;
+}
+
+.scp-service-desc {
+    color: var(--scp-gray-600);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.scp-service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-service-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.scp-service-btn:hover::before {
+    left: 100%;
+}
+
+.scp-service-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    color: white;
+}
+
+/* Process Section */
+.scp-process-section {
+    padding: 120px 0;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--scp-dark) 0%, var(--scp-gray-800) 50%, var(--scp-gray-700) 100%);
+    z-index: -1;
+}
+
+.scp-process-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(0, 140, 255);
+    margin-bottom: 1rem;
+}
+
+.scp-process-subtitle {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+}
+
+.scp-process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.scp-process-step {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(48, 48, 48, 0.63);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-process-step::before {
+    content: attr(data-step);
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.scp-process-step:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.863);
+}
+
+.scp-step-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-accent));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.scp-process-step:hover .scp-step-icon {
+    transform: scale(1.1) rotateY(15deg);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.scp-step-content h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(27, 27, 27);
+}
+
+.scp-step-content p {
+    color: rgba(97, 97, 97, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Pricing Section */
+.scp-pricing-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, var(--scp-gray-50) 0%, #ffffff 50%, var(--scp-light) 100%);
+    position: relative;
+}
+
+.scp-pricing-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.scp-pricing-subtitle {
+    font-size: 1.2rem;
+    color: var(--scp-gray-600);
+    margin-bottom: 0;
+}
+
+.scp-pricing-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scp-pricing-card.scp-featured {
+    border: 2px solid var(--scp-primary);
+    transform: scale(1.05);
+}
+
+.scp-popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.scp-pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.scp-pricing-card.scp-featured:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.scp-pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scp-plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--scp-dark);
+    margin-bottom: 1rem;
+}
+
+.scp-plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.scp-currency {
+    font-size: 1.2rem;
+    color: var(--scp-gray-600);
+}
+
+.scp-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.scp-period {
+    font-size: 1rem;
+    color: var(--scp-gray-500);
+}
+
+.scp-plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex: 1;
+}
+
+.scp-plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.scp-plan-features li:last-child {
+    border-bottom: none;
+}
+
+.scp-plan-features i.fa-check {
+    color: var(--scp-success);
+}
+
+.scp-plan-features i.fa-times {
+    color: var(--scp-gray-400);
+}
+
+.scp-pricing-btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-pricing-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.scp-pricing-btn:hover::before {
+    left: 100%;
+}
+
+.scp-pricing-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    color: white;
+}
+
+/* Animations */
+@keyframes scpFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+@keyframes scpFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scp-services-title,
+    .scp-process-title,
+    .scp-pricing-title {
+        font-size: 2.2rem;
+    }
+    
+    .scp-services-subtitle,
+    .scp-process-subtitle,
+    .scp-pricing-subtitle {
+        font-size: 1rem;
+    }
+    
+    .scp-service-card,
+    .scp-pricing-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .scp-process-timeline {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .scp-pricing-card.scp-featured {
+        transform: none;
+    }
+    
+    .scp-pricing-card.scp-featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* Dark Theme Support */
+.dark-theme .scp-services-main {
+    background: linear-gradient(135deg, var(--scp-gray-900) 0%, var(--scp-dark) 50%, var(--scp-gray-800) 100%);
+}
+
+.dark-theme .scp-service-card {
+    background: rgba(31, 41, 55, 0.95);
+    border-color: rgba(75, 85, 99, 0.3);
+}
+
+.dark-theme .scp-services-title,
+.dark-theme .scp-pricing-title {
+    color: white;
+}
+
+.dark-theme .scp-services-subtitle,
+.dark-theme .scp-pricing-subtitle {
+    color: var(--scp-gray-400);
+}
+
+.dark-theme .scp-service-title {
+    color: white;
+}
+
+.dark-theme .scp-service-desc {
+    color: var(--scp-gray-400);
+}
+
+.dark-theme .scp-pricing-section {
+    background: linear-gradient(135deg, var(--scp-gray-900) 0%, var(--scp-dark) 50%, var(--scp-gray-800) 100%);
+}
+
+.dark-theme .scp-pricing-card {
+    background: rgba(31, 41, 55, 0.95);
+    border-color: rgba(75, 85, 99, 0.3);
+}
+
+.dark-theme .scp-plan-name {
+    color: white;
+}
+
+/* Why Choose Us Section */
+.scp-why-choose-section {
+    padding: 120px 0;
+    background: #ffffff;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-why-choose-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--scp-dark) 0%, var(--scp-gray-800) 50%, var(--scp-gray-700) 100%);
+    z-index: -1;
+}
+
+.scp-why-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(0, 89, 255);
+    margin-bottom: 1rem;
+}
+
+.scp-why-subtitle {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+}
+
+.scp-usp-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+}
+
+.scp-usp-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.scp-usp-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-usp-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.scp-usp-card:hover .scp-usp-icon::before {
+    left: 100%;
+}
+
+.scp-usp-card:hover .scp-usp-icon {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+}
+
+.scp-usp-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.scp-usp-desc {
+    color: rgba(112, 112, 112, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CTA Section */
+.scp-cta-section {
+    padding: 120px 0;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: scpFloat 10s ease-in-out infinite;
+}
+
+.scp-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: scpFloat 10s ease-in-out infinite reverse;
+}
+
+.scp-cta-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(3, 138, 248);
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-cta-subtitle {
+    font-size: 1.3rem;
+    color: rgba(63, 63, 63, 0.9);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.scp-cta-primary {
+    background: rgb(200, 236, 245);
+    color: var(--scp-primary);
+    border: 2px solid transparent;
+}
+
+.scp-cta-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(88, 88, 88);
+    border: 2px solid rgba(46, 46, 46, 0.904);
+    backdrop-filter: blur(10px);
+}
+
+.scp-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.scp-cta-btn:hover::before {
+    left: 100%;
+}
+
+.scp-cta-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: var(--scp-primary);
+}
+
+.scp-cta-secondary:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 768px) {
+    .scp-why-title,
+    .scp-cta-title {
+        font-size: 2.5rem;
+    }
+    
+    .scp-why-subtitle,
+    .scp-cta-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .scp-usp-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .scp-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .scp-cta-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Dark Theme Additional Styles */
+.dark-theme .scp-pricing-card {
+    background: rgba(31, 41, 55, 0.95);
+    border-color: rgba(75, 85, 99, 0.3);
+}
+
+.dark-theme .scp-plan-features li {
+    border-bottom-color: rgba(75, 85, 99, 0.2);
+}
+
+/* Service Modal Styles */
+.scp-modal-content {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.scp-modal-header {
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    border-bottom: none;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.scp-modal-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.scp-modal-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.scp-modal-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.scp-modal-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.scp-modal-tagline {
+    font-size: 1rem;
+    color: rgba(65, 65, 65, 0.9);
+    margin: 0.5rem 0 0 0;
+    line-height: 1.4;
+}
+
+.scp-modal-close {
+    background: rgb(228, 228, 228);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    color: #313131;
+}
+
+.scp-modal-close:hover {
+    background: rgba(138, 138, 138, 0.637);
+}
+
+.scp-modal-body {
+    padding: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.scp-modal-section {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.scp-modal-section:last-child {
+    border-bottom: none;
+}
+
+.scp-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--scp-primary);
+    margin-bottom: 1.5rem;
+}
+
+.scp-section-title i {
+    width: 24px;
+    text-align: center;
+}
+
+.scp-section-content {
+    color: var(--scp-gray-700);
+    line-height: 1.6;
+}
+
+/* Feature Items */
+.scp-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 174, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.scp-feature-item:hover {
+    background: rgba(0, 174, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.scp-feature-item i {
+    color: var(--scp-primary);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.scp-feature-item span {
+    font-weight: 500;
+    color: var(--scp-gray-700);
+}
+
+/* Process Flow */
+.scp-process-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.scp-process-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(0, 174, 255, 0.03);
+    border-radius: 15px;
+    border-left: 4px solid var(--scp-primary);
+    transition: all 0.3s ease;
+}
+
+.scp-process-item:hover {
+    background: rgba(0, 174, 255, 0.08);
+    transform: translateX(5px);
+}
+
+.scp-process-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.scp-process-content h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--scp-gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.scp-process-content p {
+    color: var(--scp-gray-600);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Benefit Items */
+.scp-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(16, 185, 129, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.scp-benefit-item:hover {
+    background: rgba(16, 185, 129, 0.1);
+    transform: translateY(-2px);
+}
+
+.scp-benefit-item i {
+    color: var(--scp-success);
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.scp-benefit-item h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--scp-gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.scp-benefit-item p {
+    color: var(--scp-gray-600);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Tech Stack */
+.scp-tech-stack {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.scp-tech-category h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--scp-gray-800);
+    margin-bottom: 0.8rem;
+}
+
+.scp-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.scp-tech-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.scp-tech-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 174, 255, 0.3);
+}
+
+/* Industry Items */
+.scp-industry-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(245, 158, 11, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.scp-industry-item:hover {
+    background: rgba(245, 158, 11, 0.1);
+    transform: translateY(-2px);
+}
+
+.scp-industry-item i {
+    color: var(--scp-warning);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.scp-industry-item span {
+    font-weight: 500;
+    color: var(--scp-gray-700);
+}
+
+/* Case Study */
+.scp-case-study {
+    background: rgba(99, 102, 241, 0.03);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.scp-case-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scp-case-header h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--scp-gray-800);
+    margin: 0;
+}
+
+.scp-case-badge {
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.scp-case-content > div {
+    margin-bottom: 1rem;
+}
+
+.scp-case-content > div:last-child {
+    margin-bottom: 0;
+}
+
+.scp-case-problem,
+.scp-case-solution,
+.scp-case-results {
+    color: var(--scp-gray-700);
+    line-height: 1.6;
+}
+
+.scp-metrics {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+}
+
+.scp-metric {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--scp-success);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Modal Footer */
+.scp-modal-footer {
+    background: var(--scp-gray-50);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+.scp-modal-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scp-modal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.scp-btn-primary {
+    background: linear-gradient(135deg, var(--scp-primary), var(--scp-secondary));
+    color: white;
+}
+
+.scp-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 174, 255, 0.3);
+    color: white;
+}
+
+.scp-btn-secondary {
+    background: var(--scp-success);
+    color: white;
+}
+
+.scp-btn-secondary:hover {
+    background: #0d9488;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.scp-btn-outline {
+    background: transparent;
+    color: var(--scp-primary);
+    border: 2px solid var(--scp-primary);
+}
+
+.scp-btn-outline:hover {
+    background: var(--scp-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .scp-modal-header {
+        padding: 1.5rem;
+    }
+    
+    .scp-modal-title-wrapper {
+        gap: 1rem;
+    }
+    
+    .scp-modal-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .scp-modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .scp-modal-section {
+        padding: 1.5rem;
+    }
+    
+    .scp-process-flow {
+        grid-template-columns: 1fr;
+    }
+    
+    .scp-modal-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .scp-modal-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .scp-metrics {
+        justify-content: center;
+    }
+}

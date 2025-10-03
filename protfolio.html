@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page - SoftCode Pro</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="protfolio.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="SoftCode Pro" class="navbar-logo" id="navbar-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto scp-nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="protfolio.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="services.html">SERVICES</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="index.html#pricing">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="index.html#process">PROCESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="contact.html">CONTACTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="software.html">SOFTWARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="blogs.html">BLOGS</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav d-flex align-items-center scp-actions">
+                  
+                    
+                   
+                    
+                    <!-- Auth Buttons -->
+                    
+                    <a class="nav-link signup-btn scp-register-btn" href="login.html">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+          <!-- 3D Model Background -->
+          <div class="model-container">
+            <iframe src='https://my.spline.design/particlesflow-Ss5EL97HRtEu9zoyX4jCCVbv/' frameborder='0' width='100%' height='100%'></iframe>
+            <div class="model-overlay"></div>
+        </div>
+        <div class="model-cta">
+            <a href="contact.html#contact-form" class="hire-me-btn" aria-label="Hire Me">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <span>Hire Me</span>
+            </a>
+        </div>
+        
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content-wrapper">
+                        <h1 class="hero-title mb-4">Our <span class="text-gradient">Projects</span></h1>
+                        <p class="hero-subtitle mb-4">Showcasing our best work across web, mobile, and cloud solutions.</p>
+                        <div class="hero-buttons">
+                            <a href="#our-story" class="btn btn-primary btn-lg me-3">Our Story</a>
+                            <a href="#team" class="btn btn-outline-light btn-lg">Meet the Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section id="portfolio" class="pf-section">
+        <div class="container">
+            <div class="pf-header">
+                <span class="pf-badge" aria-hidden="true"><i class="fas fa-table-cells-large"></i> Portfolio</span>
+                <h2 class="pf-section-title">Selected Projects</h2>
+                <p class="pf-subtitle">Explore our work across web, mobile, cloud, and AI solutions.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="pf-filters" role="tablist" aria-label="Project filters">
+                <button class="pf-filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button class="pf-filter-btn" data-filter="web" aria-pressed="false">Web</button>
+                <button class="pf-filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+                <button class="pf-filter-btn" data-filter="uiux" aria-pressed="false">UI/UX</button>
+                <button class="pf-filter-btn" data-filter="cloud" aria-pressed="false">Cloud</button>
+                <button class="pf-filter-btn" data-filter="ai" aria-pressed="false">AI</button>
+                <button class="pf-filter-btn" data-filter="consulting" aria-pressed="false">Consulting</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="pf-grid" id="pfGrid">
+                <!-- Card 1 -->
+                <article class="pf-card" data-category="web uiux">
+                    <div class="pf-thumb" tabindex="0" data-index="0" data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=60" data-caption="E‑commerce Web Platform redesign">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60" alt="E-commerce platform dashboard UI" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">E‑commerce Platform</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">E‑commerce Platform</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Web</span>
+                            <span class="pf-tag">UI/UX</span>
+                        </div>
+                        <p class="pf-desc">A modern online store with secure payments, personalized experiences, and AI product recommendations to boost conversions.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+                            <span class="pf-tech-badge"><i class="fab fa-node-js" aria-hidden="true"></i> Node.js</span>
+                            <span class="pf-tech-badge"><i class="fas fa-database" aria-hidden="true"></i> MongoDB</span>
+                            <span class="pf-tech-badge"><i class="fab fa-stripe" aria-hidden="true"></i> Stripe</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Website / E‑commerce</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Shoply Inc.</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Aug 2025</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Full‑Stack + UI/UX</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-arrow-trend-up" aria-hidden="true"></i> Increased sales by 40% in the first 3 months.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="pf-card" data-category="mobile uiux">
+                    <div class="pf-thumb" tabindex="0" data-index="1" data-src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=60" data-caption="Mobile Banking App with biometric auth">
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60" alt="Mobile banking app screens" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Mobile Banking</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Mobile Banking</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Mobile</span>
+                            <span class="pf-tag">UI/UX</span>
+                        </div>
+                        <p class="pf-desc">A secure banking app with instant transfers, biometric login, and card controls designed for trust and simplicity.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-android" aria-hidden="true"></i> Android</span>
+                            <span class="pf-tech-badge"><i class="fab fa-apple" aria-hidden="true"></i> iOS</span>
+                            <span class="pf-tech-badge"><i class="fas fa-fingerprint" aria-hidden="true"></i> Biometric</span>
+                            <span class="pf-tech-badge"><i class="fas fa-lock" aria-hidden="true"></i> Security</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Mobile App</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Finnova Bank</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: May 2025</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Mobile Dev + Security</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-users" aria-hidden="true"></i> 10k+ users onboarded in the first month.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="pf-card" data-category="web cloud">
+                    <div class="pf-thumb" tabindex="0" data-index="2" data-src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1600&q=60" data-caption="SaaS Analytics Dashboard">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=60" alt="SaaS analytics dashboard charts" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Analytics SaaS</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Analytics SaaS</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Web</span>
+                            <span class="pf-tag">Cloud</span>
+                        </div>
+                        <p class="pf-desc">A scalable analytics platform with real‑time dashboards, cohort analysis, and automated reporting for growth teams.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+                            <span class="pf-tech-badge"><i class="fas fa-chart-line" aria-hidden="true"></i> Analytics</span>
+                            <span class="pf-tech-badge"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                            <span class="pf-tech-badge"><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: SaaS / Web</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Confidential</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Jan 2025</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Backend + Data</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-chart-simple" aria-hidden="true"></i> Reduced churn by 22% via proactive insights.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="pf-card" data-category="ai web">
+                    <div class="pf-thumb" tabindex="0" data-index="3" data-src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1600&q=60" data-caption="AI Chatbot Assistant for support">
+                        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=60" alt="Abstract AI chatbot concept" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">AI Chatbot</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">AI Chatbot</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">AI</span>
+                            <span class="pf-tag">Web</span>
+                        </div>
+                        <p class="pf-desc">Intelligent support assistant with NLP, knowledge base search, and handoff to agents for complex cases.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                            <span class="pf-tech-badge"><i class="fas fa-robot" aria-hidden="true"></i> NLP</span>
+                            <span class="pf-tech-badge"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                            <span class="pf-tech-badge"><i class="fas fa-cloud" aria-hidden="true"></i> Cloud</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: AI Tool</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Supportly</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Nov 2024</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: AI Integration</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-headset" aria-hidden="true"></i> 35% fewer tickets handled by agents.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="pf-card" data-category="cloud web">
+                    <div class="pf-thumb" tabindex="0" data-index="4" data-src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=60" data-caption="Logistics Tracking System on cloud">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=60" alt="Cloud infrastructure concept" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Logistics Cloud</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Logistics Cloud</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Cloud</span>
+                            <span class="pf-tag">Web</span>
+                        </div>
+                        <p class="pf-desc">Cloud‑native tracking platform with real‑time fleet monitoring, route optimization and alerts.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                            <span class="pf-tech-badge"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                            <span class="pf-tech-badge"><i class="fas fa-database" aria-hidden="true"></i> DynamoDB</span>
+                            <span class="pf-tech-badge"><i class="fas fa-route" aria-hidden="true"></i> Maps</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Cloud Platform</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: MoveFast Logistics</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Mar 2025</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Cloud + DevOps</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-signal" aria-hidden="true"></i> 99.9% uptime and faster delivery ETAs.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="pf-card" data-category="mobile ai">
+                    <div class="pf-thumb" tabindex="0" data-index="5" data-src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1600&q=60" data-caption="Telemedicine App with AI triage">
+                        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1200&q=60" alt="Medical telemedicine app concept" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Telemedicine</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Telemedicine</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Mobile</span>
+                            <span class="pf-tag">AI</span>
+                        </div>
+                        <p class="pf-desc">Virtual care with AI triage, video consultations, e‑prescriptions, and lab integrations for clinics.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-react" aria-hidden="true"></i> React Native</span>
+                            <span class="pf-tech-badge"><i class="fas fa-video" aria-hidden="true"></i> WebRTC</span>
+                            <span class="pf-tech-badge"><i class="fas fa-shield-heart" aria-hidden="true"></i> HIPAA</span>
+                            <span class="pf-tech-badge"><i class="fas fa-cloud" aria-hidden="true"></i> Cloud</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Mobile + AI</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Healthify</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Jul 2024</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Full‑Stack Mobile</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-clock" aria-hidden="true"></i> Reduced patient wait time by 45%.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="pf-card" data-category="web uiux">
+                    <div class="pf-thumb" tabindex="0" data-index="6" data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=60" data-caption="Marketing Website Revamp">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60" alt="Marketing website design" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Website Revamp</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Website Revamp</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Web</span>
+                            <span class="pf-tag">UI/UX</span>
+                        </div>
+                        <p class="pf-desc">High‑performance marketing site with refined brand identity, animations, and SEO foundations.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-bootstrap" aria-hidden="true"></i> Bootstrap</span>
+                            <span class="pf-tech-badge"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> GSAP</span>
+                            <span class="pf-tech-badge"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i> SEO</span>
+                            <span class="pf-tech-badge"><i class="fas fa-gauge-high" aria-hidden="true"></i> Performance</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Website / UI</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: GrowthLabs</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Sep 2024</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: UI/UX + Frontend</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-arrow-up-right-dots" aria-hidden="true"></i> 62% conversion lift post‑launch.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="pf-card" data-category="consulting cloud">
+                    <div class="pf-thumb" tabindex="0" data-index="7" data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=60" data-caption="Retail POS Integration Consulting">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=60" alt="Retail POS integration concept" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Retail Integration</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Retail Integration</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Consulting</span>
+                            <span class="pf-tag">Cloud</span>
+                        </div>
+                        <p class="pf-desc">End‑to‑end POS integration and data sync across ERP, e‑commerce, and inventory systems.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fas fa-diagram-project" aria-hidden="true"></i> Integration</span>
+                            <span class="pf-tech-badge"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                            <span class="pf-tech-badge"><i class="fas fa-plug" aria-hidden="true"></i> APIs</span>
+                            <span class="pf-tech-badge"><i class="fas fa-shield-halved" aria-hidden="true"></i> Security</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Consulting / Cloud</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: RetailPro</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Dec 2024</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: Solution Architecture</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-store" aria-hidden="true"></i> Unified POS across 200+ stores.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="pf-card" data-category="web uiux">
+                    <div class="pf-thumb" tabindex="0" data-index="8" data-src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1600&q=60" data-caption="Case Study Microsite">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=60" alt="Case study microsite pages" loading="lazy">
+                        <div class="pf-overlay">
+                            <div class="pf-overlay-title">Case Study Microsite</div>
+                            <div class="pf-actions">
+                                <button class="pf-action pf-view" aria-label="Open image"><i class="fas fa-magnifying-glass-plus"></i></button>
+                                <a class="pf-action" href="#" aria-label="View case study" title="View case study"><i class="fas fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pf-content">
+                        <h3 class="pf-card-title">Case Study Microsite</h3>
+                        <div class="pf-tags">
+                            <span class="pf-tag">Web</span>
+                            <span class="pf-tag">UI/UX</span>
+                        </div>
+                        <p class="pf-desc">A storytelling microsite with immersive visuals, interactive charts, and SEO‑friendly content structure.</p>
+                        <div class="pf-tech" aria-label="Technologies used">
+                            <span class="pf-tech-badge"><i class="fab fa-html5" aria-hidden="true"></i> HTML5</span>
+                            <span class="pf-tech-badge"><i class="fab fa-sass" aria-hidden="true"></i> SCSS</span>
+                            <span class="pf-tech-badge"><i class="fas fa-chart-column" aria-hidden="true"></i> Charts</span>
+                            <span class="pf-tech-badge"><i class="fas fa-rocket" aria-hidden="true"></i> Optimization</span>
+                        </div>
+                        <div class="pf-meta">
+                            <div class="pf-meta-item"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Category: Website</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-user-tie" aria-hidden="true"></i><span>Client: Confidential</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Completed: Feb 2025</span></div>
+                            <div class="pf-meta-item"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Role: UI/UX + SEO</span></div>
+                        </div>
+                        <div class="pf-impact"><i class="fas fa-chart-line" aria-hidden="true"></i> 70% increase in time‑on‑page.</div>
+                        <div class="pf-ctas">
+                            <a href="#" class="pf-btn" aria-label="View project case study"><i class="fas fa-book-open"></i> View Project</a>
+                            <a href="#" class="pf-btn pf-btn-outline" aria-label="Open live demo" target="_blank" rel="noopener"><i class="fas fa-external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="pf-lightbox" id="pfLightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+        <div class="pf-lightbox-content">
+            <img class="pf-lightbox-image" id="pfLightboxImage" alt="Preview image">
+            <div class="pf-lightbox-caption" id="pfLightboxCaption"></div>
+            <button class="pf-lightbox-close" id="pfLightboxClose" aria-label="Close preview"><i class="fas fa-xmark"></i></button>
+            <button class="pf-lightbox-prev" id="pfLightboxPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <button class="pf-lightbox-next" id="pfLightboxNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="scp-footer">
+        <div class="footer-bg-elements">
+            <div class="bg-circle circle-a"></div>
+            <div class="bg-circle circle-b"></div>
+        </div>
+        <div class="container">
+            <div class="row g-4 align-items-start scp-footer-top">
+                <div class="col-lg-4">
+                    <div class="scp-footer-brand">
+                        <div class="brand-logo">
+                            <img src="../images/logo.png" alt="SoftCode Pro" class="footer-logo">
+                        </div>
+                        <p class="brand-text">We craft modern digital products with performance, security, and exceptional user experience.</p>
+                        <div class="scp-footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="protfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="index.html#pricing">pricing</a></li>
+                        <li><a href="index.html#process">process</a></li>
+                        <li><a href="contact.html#FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="footer-title">Stay in the loop</h6>
+                    <p class="footer-note">Subscribe to get product updates, news and special offers.</p>
+                    <form class="footer-subscribe-form" action="#" method="post" onsubmit="return false;">
+                        <div class="footer-subscribe">
+                            <input type="email" class="footer-input" placeholder="Enter your email" aria-label="Email address">
+                            <button class="footer-btn" type="submit">
+                                <span>Subscribe</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="scp-footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="bottom-row">
+                    <p class="copyright">© 2025 SoftCode Pro. All rights reserved.</p>
+                    <div class="bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="sep">•</span>
+                        <a href="#">Terms</a>
+                        <span class="sep">•</span>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Global state for cross-section features
+        let currentServiceKey = null;
+
+        // Theme toggle available for inline handler
+        window.toggleTheme = function toggleTheme() {
+            const isDark = document.body.classList.toggle('dark-theme');
+            const icon = document.getElementById('themeIcon');
+            if (icon) icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        };
+
+        // Language Switch Functionality (global for inline handlers)
+        window.switchLanguage = function switchLanguage(lang) {
+            const currentLangSpan = document.getElementById('currentLang');
+            const elements = {
+                products: document.querySelector('a[href="#products"]'),
+                services: document.querySelector('a[href="#services"]'),
+                about: document.querySelector('a[href="#about"]'),
+                contacts: document.querySelector('a[href="#contacts"]'),
+                login: document.querySelector('a[href="#login"]'),
+                signup: document.querySelector('a[href="#signup"]'),
+                title: document.querySelector('.hero-title'),
+                description: document.querySelector('.hero-description'),
+                readMore: document.querySelector('.read-more-btn')
+            };
+
+            // Update text content
+            const hasTranslations = typeof translations !== 'undefined' && translations && translations[lang];
+            if (hasTranslations) {
+                Object.keys(elements).forEach(key => {
+                    if (!elements[key] || !translations[lang][key]) return;
+                    // Do not overwrite hero title; it is controlled by the typewriter
+                    if (key === 'title') return;
+                    elements[key].textContent = translations[lang][key];
+                });
+            }
+            // Update current language display
+            if (currentLangSpan) currentLangSpan.textContent = lang.toUpperCase();
+            
+            // Save language preference
+            localStorage.setItem('language', lang);
+
+            // If a service modal is open, re-render it with the new language
+            const modalEl = document.getElementById('serviceModal');
+            if (modalEl && modalEl.classList.contains('show') && typeof populateServiceModal === 'function' && currentServiceKey) {
+                populateServiceModal(currentServiceKey, lang);
+            }
+        };
+
+        // Initialize theme early to avoid flash of incorrect theme
+        (function initThemeLanguageEarly() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                const icon = document.getElementById('themeIcon');
+                if (icon) icon.className = 'fas fa-sun';
+            }
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            window.switchLanguage(savedLanguage);
+        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure page-load entrance animations run (navbar visibility, hero pieces, etc.)
+            document.body.classList.add('page-loaded');
+
+            // Apply scrolled state styling to navbar for readability after offset > 10px
+            const navbar = document.querySelector('.navbar');
+            const applyNavbarScrolled = () => {
+                if (!navbar) return;
+                if (window.scrollY > 10) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            };
+            applyNavbarScrolled();
+            window.addEventListener('scroll', applyNavbarScrolled);
+
+            // Animated Counter Functionality
+            function animateCounters() {
+                const counters = document.querySelectorAll('.scp-stat-counter');
+                const speed = 200; // The lower the faster
+                
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                        counter.classList.add('animated');
+                    }
+                });
+            }
+            
+            // Intersection Observer to trigger animation when section is in view
+            const statsSection = document.querySelector('.scp-stats-section');
+            let animated = false;
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !animated) {
+                        animateCounters();
+                        animated = true;
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+            const contactForm = document.getElementById('scpContactForm');
+            const submitBtn = document.getElementById('scpSubmitBtn');
+            const submitSpinner = document.getElementById('scpSubmitSpinner');
+            const submitText = document.getElementById('scpSubmitText');
+            const successAlert = document.getElementById('scpSuccessAlert');
+
+            // Form validation and submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // Check form validity
+                    if (!contactForm.checkValidity()) {
+                        event.stopPropagation();
+                        contactForm.classList.add('was-validated');
+                        return;
+                    }
+
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Sending...';
+                    submitSpinner.classList.remove('d-none');
+
+                    // Simulate form submission (replace with actual AJAX call)
+                    setTimeout(function() {
+                        // Get form data
+                        const formData = {
+                            name: document.getElementById('scpName').value,
+                            email: document.getElementById('scpEmail').value,
+                            subject: document.getElementById('scpSubject').value,
+                            message: document.getElementById('scpMessage').value
+                        };
+                        
+                        console.log('Form submitted:', formData);
+                        
+                        // Hide loading state
+                        submitBtn.disabled = false;
+                        submitText.textContent = 'Send Message';
+                        submitSpinner.classList.add('d-none');
+                        
+                        // Show success message
+                        successAlert.classList.remove('d-none');
+                        successAlert.classList.add('show');
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(function() {
+                            successAlert.classList.add('scp-fade-out');
+                            setTimeout(function() {
+                                successAlert.classList.remove('show', 'scp-fade-out');
+                            }, 300);
+                        }, 5000);
+                        
+                        // Reset form
+                        contactForm.reset();
+                        contactForm.classList.remove('was-validated');
+                    }, 1500);
+                });
+
+                // Real-time validation feedback
+                const formInputs = contactForm.querySelectorAll('.form-control');
+                formInputs.forEach(input => {
+                    input.addEventListener('input', function() {
+                        if (input.checkValidity()) {
+                            input.classList.remove('is-invalid');
+                            input.classList.add('is-valid');
+                        } else {
+                            input.classList.remove('is-valid');
+                            input.classList.add('is-invalid');
+                        }
+                    });
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Portfolio: Filtering and Lightbox
+            (function initPortfolio() {
+                const grid = document.getElementById('pfGrid');
+                const cards = grid ? Array.from(grid.querySelectorAll('.pf-card')) : [];
+                const filterButtons = Array.from(document.querySelectorAll('.pf-filter-btn'));
+                
+                const ANIM_MS = 200;
+                function showCard(card) {
+                    card.style.display = '';
+                    // allow layout to apply then animate
+                    requestAnimationFrame(() => {
+                        card.classList.remove('pf-hide');
+                        card.classList.add('pf-show');
+                    });
+                }
+                function hideCard(card) {
+                    card.classList.remove('pf-show');
+                    card.classList.add('pf-hide');
+                    setTimeout(() => { card.style.display = 'none'; }, ANIM_MS);
+                }
+                function applyFilter(filter) {
+                    cards.forEach(card => {
+                        const cats = (card.getAttribute('data-category') || '').split(/\s+/);
+                        if (filter === 'all' || cats.includes(filter)) {
+                            showCard(card);
+                        } else {
+                            hideCard(card);
+                        }
+                    });
+                }
+                function setActiveFilter(targetBtn) {
+                    filterButtons.forEach(btn => {
+                        const isActive = btn === targetBtn;
+                        btn.classList.toggle('active', isActive);
+                        btn.setAttribute('aria-pressed', String(isActive));
+                    });
+                }
+                // Wire filter controls
+                filterButtons.forEach(btn => {
+                    const filter = btn.getAttribute('data-filter');
+                    btn.addEventListener('click', () => {
+                        setActiveFilter(btn);
+                        applyFilter(filter);
+                    });
+                    btn.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            btn.click();
+                        }
+                    });
+                });
+                
+                // Lightbox
+                const lightbox = document.getElementById('pfLightbox');
+                const imgEl = document.getElementById('pfLightboxImage');
+                const captionEl = document.getElementById('pfLightboxCaption');
+                const btnClose = document.getElementById('pfLightboxClose');
+                const btnPrev = document.getElementById('pfLightboxPrev');
+                const btnNext = document.getElementById('pfLightboxNext');
+                const thumbs = Array.from(document.querySelectorAll('.pf-thumb'));
+                let currentIndex = 0;
+                let lastFocusedEl = null;
+                let visibleIndices = thumbs.map(t => parseInt(t.dataset.index, 10));
+                
+                function computeVisibleIndices() {
+                    visibleIndices = cards
+                        .filter(card => card.style.display !== 'none')
+                        .map(card => {
+                            const t = card.querySelector('.pf-thumb');
+                            return t ? parseInt(t.dataset.index, 10) : -1;
+                        })
+                        .filter(i => i >= 0);
+                    if (!visibleIndices.length) {
+                        visibleIndices = thumbs.map(t => parseInt(t.dataset.index, 10));
+                    }
+                }
+                function updateLightbox(index) {
+                    const thumb = document.querySelector(`.pf-thumb[data-index="${index}"]`);
+                    if (!thumb) return;
+                    const src = thumb.getAttribute('data-src') || (thumb.querySelector('img') ? thumb.querySelector('img').src : '');
+                    const cap = thumb.getAttribute('data-caption') || '';
+                    imgEl.src = src;
+                    imgEl.alt = cap || 'Preview image';
+                    captionEl.textContent = cap;
+                }
+                function openLightbox(index) {
+                    computeVisibleIndices();
+                    currentIndex = index;
+                    updateLightbox(currentIndex);
+                    lightbox.classList.add('open');
+                    lightbox.removeAttribute('aria-hidden');
+                    document.body.style.overflow = 'hidden';
+                    lastFocusedEl = document.activeElement;
+                    btnClose && btnClose.focus();
+                }
+                function closeLightbox() {
+                    lightbox.classList.remove('open');
+                    lightbox.setAttribute('aria-hidden', 'true');
+                    document.body.style.overflow = '';
+                    if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+                        lastFocusedEl.focus();
+                    }
+                }
+                function navigateLightbox(direction) {
+                    if (!visibleIndices.length) computeVisibleIndices();
+                    const pos = visibleIndices.indexOf(currentIndex);
+                    const nextPos = (pos + direction + visibleIndices.length) % visibleIndices.length;
+                    currentIndex = visibleIndices[nextPos];
+                    updateLightbox(currentIndex);
+                }
+                
+                // Wire thumbnails
+                thumbs.forEach(thumb => {
+                    const idx = parseInt(thumb.dataset.index, 10);
+                    // Open on click (ignore case-study link clicks)
+                    thumb.addEventListener('click', (e) => {
+                        if (e.target.closest('a.pf-action')) return;
+                        openLightbox(idx);
+                    });
+                    // Keyboard open
+                    thumb.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            openLightbox(idx);
+                        }
+                    });
+                    // Dedicated view button
+                    const viewBtn = thumb.querySelector('.pf-view');
+                    if (viewBtn) {
+                        viewBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            openLightbox(idx);
+                        });
+                    }
+                });
+                
+                // Lightbox controls
+                if (btnClose) btnClose.addEventListener('click', closeLightbox);
+                if (btnPrev) btnPrev.addEventListener('click', () => navigateLightbox(-1));
+                if (btnNext) btnNext.addEventListener('click', () => navigateLightbox(1));
+                if (lightbox) {
+                    // Close when clicking backdrop
+                    lightbox.addEventListener('click', (e) => {
+                        if (e.target === lightbox) closeLightbox();
+                    });
+                }
+                // Keyboard navigation when open
+                window.addEventListener('keydown', (e) => {
+                    if (!lightbox.classList.contains('open')) return;
+                    if (e.key === 'Escape') closeLightbox();
+                    else if (e.key === 'ArrowLeft') navigateLightbox(-1);
+                    else if (e.key === 'ArrowRight') navigateLightbox(1);
+                    else if (e.key === 'Tab') {
+                        // Trap focus within lightbox controls
+                        const focusables = [btnPrev, btnNext, btnClose].filter(Boolean);
+                        if (!focusables.length) return;
+                        const idx = focusables.indexOf(document.activeElement);
+                        let next = idx;
+                        if (e.shiftKey) next = idx <= 0 ? focusables.length - 1 : idx - 1;
+                        else next = idx === focusables.length - 1 ? 0 : idx + 1;
+                        e.preventDefault();
+                        focusables[next].focus();
+                    }
+                });
+                
+                // Initialize state
+                applyFilter('all');
+            })();
+            
+            // Attach handlers to service cards
+            (function initServiceCards() {
+                const cards = document.querySelectorAll('.service-card[data-service]');
+                const modalEl = document.getElementById('serviceModal');
+                const openModal = (key) => {
+                    currentServiceKey = key;
+                    const lang = localStorage.getItem('language') || 'en';
+                    if (typeof populateServiceModal === 'function') {
+                        populateServiceModal(key, lang);
+                    }
+                    if (modalEl) {
+                        const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                        modal.show();
+                    }
+                };
+                cards.forEach(card => {
+                    const key = card.getAttribute('data-service');
+                    if (!key) return;
+                    card.addEventListener('click', () => openModal(key));
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            openModal(key);
+                        }
+                    });
+                });
+                if (modalEl) {
+                    modalEl.addEventListener('hidden.bs.modal', () => {
+                        currentServiceKey = null;
+                    });
+                }
+            })();
+
+            // Language Switch handled globally above
+
+            // Theme and language were initialized early
+
+
+
+             // Add scroll animation
+             window.addEventListener('scroll', function() {
+                const cards = document.querySelectorAll('.mission-card');
+                const triggerBottom = window.innerHeight / 5 * 4;
+
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    if(cardTop < triggerBottom) {
+                        card.classList.add('animate-card');
+                    }
+                });
+            });
+
+            // Add hover effect sound (optional)
+            document.querySelectorAll('.mission-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+        });
+ 
+    </script>
+
+    <script src="site.js" defer></script>
+
+</body>
+</html>

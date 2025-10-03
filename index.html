@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development - SoftCode Pro</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="SoftCode Pro" class="navbar-logo" id="navbar-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto scp-nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="protfolio.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="services.html">SERVICES</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="index.html#pricing">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="index.html#process">PROCESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="contact.html">CONTACTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="software.html">SOFTWARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scp-pill-link" href="blogs.html">BLOGS</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav d-flex align-items-center scp-actions">
+                  
+                    
+                   
+                    
+                    <!-- Auth Buttons -->
+                    
+                    <a class="nav-link signup-btn scp-register-btn" href="login.html">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Dashboard Preview (Desktop Only) -->
+    <div class="scp-fixed-dashboard-wrapper no-animation">
+        <div class="scp-hero-dashboard-preview scp-fixed-dashboard">
+            <div class="scp-hero-dashboard-container">
+                <!-- Dashboard Header -->
+                <div class="scp-hero-dashboard-header">
+                    <div class="scp-hero-header-dots">
+                        <span class="scp-hero-dot scp-hero-dot-red"></span>
+                        <span class="scp-hero-dot scp-hero-dot-yellow"></span>
+                        <span class="scp-hero-dot scp-hero-dot-green"></span>
+                    </div>
+                    <div class="scp-hero-header-title">SoftCode Pro Dashboard</div>
+                </div>
+                
+                <!-- Dashboard Content -->
+                <div class="scp-hero-dashboard-content">
+                    <!-- Stats Cards -->
+                    <div class="scp-hero-stats-row">
+                        <div class="scp-hero-stat-card">
+                            <div class="scp-hero-stat-icon scp-hero-stat-icon-blue">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="scp-hero-stat-info">
+                                <div class="scp-hero-stat-value">2.4k</div>
+                                <div class="scp-hero-stat-name">Users</div>
+                            </div>
+                        </div>
+                        <div class="scp-hero-stat-card">
+                            <div class="scp-hero-stat-icon scp-hero-stat-icon-green">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="scp-hero-stat-info">
+                                <div class="scp-hero-stat-value">+24%</div>
+                                <div class="scp-hero-stat-name">Growth</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chart Area -->
+                    <div class="scp-hero-chart-area">
+                        <div class="scp-hero-chart-header">
+                            <div class="scp-hero-chart-title">Performance Analytics</div>
+                            <div class="scp-hero-chart-legend">
+                                <span class="scp-hero-legend-item">
+                                    <span class="scp-hero-legend-color scp-hero-legend-blue"></span>
+                                    Revenue
+                                </span>
+                                <span class="scp-hero-legend-item">
+                                    <span class="scp-hero-legend-color scp-hero-legend-green"></span>
+                                    Users
+                                </span>
+                            </div>
+                        </div>
+                        <div class="scp-hero-chart-container">
+                            <svg class="scp-hero-animated-chart" viewBox="0 0 300 120">
+                                <defs>
+                                    <linearGradient id="scpFixedChartGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.8"/>
+                                        <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.1"/>
+                                    </linearGradient>
+                                    <linearGradient id="scpFixedChartGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/>
+                                        <stop offset="100%" stop-color="#10B981" stop-opacity="0.1"/>
+                                    </linearGradient>
+                                </defs>
+                                
+                                <!-- Animated Chart Lines -->
+                                <path class="scp-hero-chart-line scp-hero-line-1" d="M20,80 Q80,60 140,45 T260,30" stroke="#4F46E5" stroke-width="3" fill="none"/>
+                                <path class="scp-hero-chart-fill-area scp-hero-area-1" d="M20,80 Q80,60 140,45 T260,30 L260,100 L20,100 Z" fill="url(#scpFixedChartGradient1)"/>
+                                
+                                <path class="scp-hero-chart-line scp-hero-line-2" d="M20,90 Q80,75 140,60 T260,50" stroke="#10B981" stroke-width="3" fill="none"/>
+                                <path class="scp-hero-chart-fill-area scp-hero-area-2" d="M20,90 Q80,75 140,60 T260,50 L260,100 L20,100 Z" fill="url(#scpFixedChartGradient2)"/>
+                                
+                                <!-- Animated Data Points -->
+                                <circle class="scp-hero-data-point scp-hero-point-1" cx="80" cy="60" r="4" fill="#4F46E5"/>
+                                <circle class="scp-hero-data-point scp-hero-point-2" cx="140" cy="45" r="4" fill="#4F46E5"/>
+                                <circle class="scp-hero-data-point scp-hero-point-3" cx="200" cy="35" r="4" fill="#4F46E5"/>
+                                
+                                <circle class="scp-hero-data-point scp-hero-point-4" cx="80" cy="75" r="4" fill="#10B981"/>
+                                <circle class="scp-hero-data-point scp-hero-point-5" cx="140" cy="60" r="4" fill="#10B981"/>
+                                <circle class="scp-hero-data-point scp-hero-point-6" cx="200" cy="50" r="4" fill="#10B981"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Activity Feed -->
+                    <div class="scp-hero-activity-feed">
+                        <div class="scp-hero-activity-item">
+                            <div class="scp-hero-activity-dot"></div>
+                            <div class="scp-hero-activity-text">New user registered</div>
+                            <div class="scp-hero-activity-time">2m ago</div>
+                        </div>
+                        <div class="scp-hero-activity-item">
+                            <div class="scp-hero-activity-dot"></div>
+                            <div class="scp-hero-activity-text">Payment processed</div>
+                            <div class="scp-hero-activity-time">5m ago</div>
+                        </div>
+                        <div class="scp-hero-activity-item">
+                            <div class="scp-hero-activity-dot"></div>
+                            <div class="scp-hero-activity-text">Project deployed</div>
+                            <div class="scp-hero-activity-time">12m ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Action Cards -->
+            <div class="scp-hero-floating-cards">
+                <div class="scp-hero-floating-card scp-hero-card-1">
+                    <div class="scp-hero-card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="scp-hero-card-text">Mobile First</div>
+                </div>
+                
+                <div class="scp-hero-floating-card scp-hero-card-2">
+                    <div class="scp-hero-card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="scp-hero-card-text">Cloud Ready</div>
+                </div>
+                
+                <div class="scp-hero-floating-card scp-hero-card-3">
+                    <div class="scp-hero-card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="scp-hero-card-text">Secure</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Video Background -->
+        <div class="hero-video-background">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="images/softgen.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+        
+        <!-- Advanced Background Effects -->
+       
+        
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <!-- Left Content Column -->
+                <div class="col-lg-7 col-xl-6 mt-5">
+                    <div class="scp-hero-content">
+                        <!-- Hero Badge -->
+                        <div class="scp-hero-badge" role="note" aria-label="Welcome">
+                            <span class="badge-icon">🚀</span>
+                            <span class="badge-text">Welcome to the Future of Software Development</span>
+                            <div class="badge-glow"></div>
+                        </div>
+                        
+                        <!-- Main Heading -->
+                        <h1 class="scp-hero-title">
+                            Transform Your Ideas Into
+                            <span class="gradient-text scp-hero-accent">Digital Reality</span>
+                            <div class="title-underline"></div>
+                        </h1>
+                        
+                        <!-- Description -->
+                        <p class="scp-hero-description">
+                            We craft innovative web, mobile, and SaaS solutions that drive business growth. 
+                            From concept to deployment, we turn your vision into powerful digital experiences 
+                            that engage users and deliver measurable results.
+                        </p>
+                        
+                        <!-- Key Features - Modern Card Design -->
+                        <div class="scp-hero-features-modern">
+                            <div class="trust-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Projects</div>
+                                </div>
+                                <div class="stat-divider"></div>
+                                <div class="stat-item">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Success Rate</div>
+                                </div>
+                                <div class="stat-divider"></div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Creative Project Building Buttons -->
+                        <div class="scp-hero-actions-creative">
+                            <a href="#contacts" class="scp-build-btn primary-build">
+                                <div class="build-container">
+                                    <div class="build-header">
+                                        <div class="build-icon">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <div class="build-title-section">
+                                            <h3 class="build-title">Start Building</h3>
+                                        </div>
+                                        <div class="build-progress-animation">
+                                            <div class="build-progress-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="protfolio.html" class="scp-build-btn secondary-build">
+                                <div class="build-container">
+                                    <div class="build-header">
+                                        <div class="build-icon">
+                                            <i class="fas fa-play-circle"></i>
+                                        </div>
+                                        <div class="build-title-section">
+                                            <h3 class="build-title">View Portfolio</h3>
+                                        </div>
+                                        <div class="build-progress-animation">
+                                            <div class="build-progress-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Right Visual Column -->
+                <div class="col-lg-5 col-xl-6">
+                    <div class="scp-hero-visual">
+                        <!-- 3D Interactive Dashboard Preview -->
+                        <div class="scp-hero-dashboard-preview">
+                            <div class="scp-hero-dashboard-container">
+                                <!-- Dashboard Header -->
+                                <div class="scp-hero-dashboard-header">
+                                    <div class="scp-hero-header-dots">
+                                        <span class="scp-hero-dot scp-hero-dot-red"></span>
+                                        <span class="scp-hero-dot scp-hero-dot-yellow"></span>
+                                        <span class="scp-hero-dot scp-hero-dot-green"></span>
+                                    </div>
+                                    <div class="scp-hero-header-title">SoftCode Pro Dashboard</div>
+                                </div>
+                                
+                                <!-- Dashboard Content -->
+                                <div class="scp-hero-dashboard-content">
+                                    <!-- Stats Cards -->
+                                    <div class="scp-hero-stats-row">
+                                        <div class="scp-hero-stat-card">
+                                            <div class="scp-hero-stat-icon scp-hero-stat-icon-blue">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                            <div class="scp-hero-stat-info">
+                                                <div class="scp-hero-stat-value">2.4k</div>
+                                                <div class="scp-hero-stat-name">Users</div>
+                                            </div>
+                                        </div>
+                                        <div class="scp-hero-stat-card">
+                                            <div class="scp-hero-stat-icon scp-hero-stat-icon-green">
+                                                <i class="fas fa-chart-line"></i>
+                                            </div>
+                                            <div class="scp-hero-stat-info">
+                                                <div class="scp-hero-stat-value">+24%</div>
+                                                <div class="scp-hero-stat-name">Growth</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Chart Area -->
+                                    <div class="scp-hero-chart-area">
+                                        <div class="scp-hero-chart-header">
+                                            <div class="scp-hero-chart-title">Performance Analytics</div>
+                                            <div class="scp-hero-chart-legend">
+                                                <span class="scp-hero-legend-item">
+                                                    <span class="scp-hero-legend-color scp-hero-legend-blue"></span>
+                                                    Revenue
+                                                </span>
+                                                <span class="scp-hero-legend-item">
+                                                    <span class="scp-hero-legend-color scp-hero-legend-green"></span>
+                                                    Users
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="scp-hero-chart-container">
+                                            <svg class="scp-hero-animated-chart" viewBox="0 0 300 120">
+                                                <defs>
+                                                    <linearGradient id="scpHeroChartGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.8"/>
+                                                        <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.1"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="scpHeroChartGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/>
+                                                        <stop offset="100%" stop-color="#10B981" stop-opacity="0.1"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                
+                                                <!-- Animated Chart Lines -->
+                                                <path class="scp-hero-chart-line scp-hero-line-1" d="M20,80 Q80,60 140,45 T260,30" stroke="#4F46E5" stroke-width="3" fill="none"/>
+                                                <path class="scp-hero-chart-fill-area scp-hero-area-1" d="M20,80 Q80,60 140,45 T260,30 L260,100 L20,100 Z" fill="url(#scpHeroChartGradient1)"/>
+                                                
+                                                <path class="scp-hero-chart-line scp-hero-line-2" d="M20,90 Q80,75 140,60 T260,50" stroke="#10B981" stroke-width="3" fill="none"/>
+                                                <path class="scp-hero-chart-fill-area scp-hero-area-2" d="M20,90 Q80,75 140,60 T260,50 L260,100 L20,100 Z" fill="url(#scpHeroChartGradient2)"/>
+                                                
+                                                <!-- Animated Data Points -->
+                                                <circle class="scp-hero-data-point scp-hero-point-1" cx="80" cy="60" r="4" fill="#4F46E5"/>
+                                                <circle class="scp-hero-data-point scp-hero-point-2" cx="140" cy="45" r="4" fill="#4F46E5"/>
+                                                <circle class="scp-hero-data-point scp-hero-point-3" cx="200" cy="35" r="4" fill="#4F46E5"/>
+                                                
+                                                <circle class="scp-hero-data-point scp-hero-point-4" cx="80" cy="75" r="4" fill="#10B981"/>
+                                                <circle class="scp-hero-data-point scp-hero-point-5" cx="140" cy="60" r="4" fill="#10B981"/>
+                                                <circle class="scp-hero-data-point scp-hero-point-6" cx="200" cy="50" r="4" fill="#10B981"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Activity Feed -->
+                                    <div class="scp-hero-activity-feed">
+                                        <div class="scp-hero-activity-item">
+                                            <div class="scp-hero-activity-dot"></div>
+                                            <div class="scp-hero-activity-text">New user registered</div>
+                                            <div class="scp-hero-activity-time">2m ago</div>
+                                        </div>
+                                        <div class="scp-hero-activity-item">
+                                            <div class="scp-hero-activity-dot"></div>
+                                            <div class="scp-hero-activity-text">Payment processed</div>
+                                            <div class="scp-hero-activity-time">5m ago</div>
+                                        </div>
+                                        <div class="scp-hero-activity-item">
+                                            <div class="scp-hero-activity-dot"></div>
+                                            <div class="scp-hero-activity-text">Project deployed</div>
+                                            <div class="scp-hero-activity-time">12m ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Action Cards -->
+                            <div class="scp-hero-floating-cards">
+                                <div class="scp-hero-floating-card scp-hero-card-1">
+                                    <div class="scp-hero-card-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="scp-hero-card-text">Mobile First</div>
+                                </div>
+                                
+                                <div class="scp-hero-floating-card scp-hero-card-2">
+                                    <div class="scp-hero-card-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="scp-hero-card-text">Cloud Ready</div>
+                                </div>
+                                
+                                <div class="scp-hero-floating-card scp-hero-card-3">
+                                    <div class="scp-hero-card-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="scp-hero-card-text">Secure</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="visual-decorations">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
+                            <div class="decoration-circle circle-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Transition -->
+        <div class="hero-wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" 
+                      fill="#ffffff"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    
+    <section class="mission-section">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-container1 d-none d-md-block">
+                <div class="logo1">
+                    <img src="../images/favigationxx.png" alt="SoftCode Pro logo" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Section Header -->
+            <div class="text-center mb-5" data-reveal="top">
+                <h1 class="section-title">Our Mission</h1>
+                <p class="section-subtitle">Engineering Reliable, Scalable Software for Your Growth</p>
+                <p class="section-description">
+                    At SoftCode Pro, we build secure, scalable solutions—web, mobile, desktop, and AI—that accelerate your business. From strategy to delivery and 24/7 support, we turn ideas into measurable impact.
+                </p>
+            </div>
+
+            <!-- Mission Cards -->
+            <div class="mission-cards">
+                <!-- Mission Card -->
+                <div class="mission-card mission animate-card" data-reveal="left">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-title">Mission</h3>
+                    <p class="card-description">
+                        Deliver secure, scalable software that solves real problems, boosts efficiency, and drives measurable results for our clients.
+                    </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="mission-card vision animate-card" data-reveal="bottom">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Vision</h3>
+                    <p class="card-description">
+                        To become the most trusted partner for digital transformation—bringing modern engineering, cloud, and AI to every business and delivering long‑term value.
+                    </p>
+                </div>
+
+                <!-- Values Card -->
+                <div class="mission-card values animate-card" data-reveal="right">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="card-title">Values</h3>
+                    <p class="card-description">
+                        Client-first partnership, transparency, craftsmanship, security-by-design, and continuous improvement—because reliability and results matter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Trusted by Brands Section -->
+     <section class="scp-brand-trust" aria-labelledby="brand-trust-title">
+        <div class="container">
+            <h3 id="brand-trust-title" class="brand-trust-title text-center">Trusted by Leading Brands</h3>
+            <p class="brand-trust-subtitle text-center">Companies that trust us with their digital transformation</p>
+            <div class="brand-logos scp-marquee" role="list" aria-live="off">
+                <div class="scp-marquee-track">
+                    <div class="brand-item" role="listitem" aria-label="CloudFirst">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        <span>CloudFirst</span>
+                    </div>
+                    <div class="brand-item" role="listitem" aria-label="StartupHub">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <span>StartupHub</span>
+                    </div>
+                    <div class="brand-item" role="listitem" aria-label="Enterprise Co">
+                        <i class="fas fa-landmark" aria-hidden="true"></i>
+                        <span>Enterprise Co</span>
+                    </div>
+                    <div class="brand-item" role="listitem" aria-label="Global Tech">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <span>Global Tech</span>
+                    </div>
+                    <div class="brand-item" role="listitem" aria-label="Smart Systems">
+                        <i class="fas fa-microchip" aria-hidden="true"></i>
+                        <span>Smart Systems</span>
+                    </div>
+                    <div class="brand-item" role="listitem" aria-label="TechCorp">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                        <span>TechCorp</span>
+                    </div>
+                    <!-- duplicate set for seamless loop -->
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        <span>CloudFirst</span>
+                    </div>
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <span>StartupHub</span>
+                    </div>
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-landmark" aria-hidden="true"></i>
+                        <span>Enterprise Co</span>
+                    </div>
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <span>Global Tech</span>
+                    </div>
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-microchip" aria-hidden="true"></i>
+                        <span>Smart Systems</span>
+                    </div>
+                    <div class="brand-item" aria-hidden="true">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                        <span>TechCorp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5" data-reveal="top">
+                <div class="services-header">
+                    <h1 class="services-title">OUR SERVICES</h1>
+                    <p class="services-subtitle">WHAT WE DO</p>
+                    <p class="text-muted">From strategy and UI/UX to full‑stack web and mobile development, cloud & DevOps, QA automation, and 24/7 support — we deliver secure, scalable solutions tailored to your goals.</p>
+                </div>
+            </div>
+
+            <!-- Services Diagram -->
+            <div class="services-diagram">
+                <!-- Central Hub -->
+                <div class="central-hub">
+                    <div class="hub-outer-ring"></div>
+                    <div class="hub-inner-ring"></div>
+                    <div class="hub-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+
+                <!-- Connecting Lines -->
+                <div class="connection-lines">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                    <div class="line line-4"></div>
+                    <div class="line line-5"></div>
+                </div>
+
+                <!-- Service Cards -->
+                <div class="service-card card-1 orange-card" data-service="custom" data-icon="fas fa-code" role="button" tabindex="0" aria-label="View details for Custom Software Development">
+                    <div class="card-icon" data-reveal="left">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-content" data-reveal="left">
+                        <h4 class="card-title">CUSTOM SOFTWARE DEVELOPMENT</h4>
+                        <p class="card-description">Tailor-made web, mobile, and desktop apps built with modern stacks, clean architecture, and robust security.</p>
+                    </div>
+                </div>
+
+                <div class="service-card card-2 cyan-card" data-service="cloud" data-icon="fas fa-cloud" role="button" tabindex="0" aria-label="View details for Cloud &amp; DevOps">
+                    <div class="card-icon" data-reveal="right">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="card-content" data-reveal="right">
+                        <h4 class="card-title">CLOUD &amp; DEVOPS</h4>
+                        <p class="card-description">Design, deploy, and optimize on AWS/Azure with CI/CD, monitoring, and smart cost control.</p>
+                    </div>
+                </div>
+
+                <div class="service-card card-3 blue-card" data-service="dataai" data-icon="fas fa-brain" role="button" tabindex="0" aria-label="View details for Data &amp; AI Solutions">
+                    <div class="card-icon" data-reveal="left">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="card-content" data-reveal="left">
+                        <h4 class="card-title">DATA &amp; AI SOLUTIONS</h4>
+                        <p class="card-description">Analytics, dashboards, and AI automation that turn your data into decisions and measurable growth.</p>
+                    </div>
+                </div>
+
+                <div class="service-card card-4 orange-light-card" data-service="design" data-icon="fas fa-paint-brush" role="button" tabindex="0" aria-label="View details for UI/UX Design">
+                    <div class="card-icon" data-reveal="right">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="card-content" data-reveal="right">
+                        <h4 class="card-title">UI/UX DESIGN</h4>
+                        <p class="card-description">Human-centered design from wireframes to pixel-perfect interfaces that convert and delight.</p>
+                    </div>
+                </div>
+
+                <div class="service-card card-5 pink-card" data-service="support" data-icon="fas fa-headset" role="button" tabindex="0" aria-label="View details for Managed Support">
+                    <div class="card-icon" data-reveal="bottom">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="card-content" data-reveal="bottom">
+                        <h4 class="card-title">MANAGED SUPPORT</h4>
+                        <p class="card-description">24/7 monitoring, SLA-backed support, performance tuning, and proactive maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <!-- Left Side - Content -->
+                <div class="col-lg-6">
+                    <div class="why-choose-content" data-reveal="left">
+                        <div class="section-badge">
+                            <span class="badge-text">Why Choose Us</span>
+                        </div>
+                        <h1 class="modern-title">
+                            Building Tomorrow's 
+                            <span class="gradient-text">Digital Solutions</span>
+                        </h1>
+                        <p class="modern-description">
+                            We transform ideas into powerful digital experiences through innovative technology, 
+                            expert craftsmanship, and unwavering commitment to excellence.
+                        </p>
+                        
+                        <!-- Modern Statistics -->
+                        <div class="modern-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number text-primary">500+</h3>
+                                    <p class="stat-label">Projects Delivered</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number text-primary">98%</h3>
+                                    <p class="stat-label">Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cta-section">
+                            <button class="modern-btn primary-btn">
+                                <span>Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="modern-btn secondary-btn">
+                                <i class="fas fa-play"></i>
+                                <span>Watch Demo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Logo -->
+                <div class="col-lg-6">
+                    <div class="logo-showcase" data-reveal="right">
+                        <div class="floating-elements">
+                            <div class="float-element element-1"></div>
+                            <div class="float-element element-2"></div>
+                            <div class="float-element element-3"></div>
+                        </div>
+                        <div class="logo-container">
+                            <img src="images/logo1.png" alt="SoftCode Pro Logo" class="modern-logo">
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern Feature Cards -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon purple-gradient">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="feature-title">Custom Development</h4>
+                            <p class="feature-description">Tailored solutions built with cutting-edge technology to meet your unique business requirements.</p>
+                            <div class="feature-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon blue-gradient">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4 class="feature-title">Cloud Integration</h4>
+                            <p class="feature-description">Scalable cloud solutions with enterprise-grade security and seamless performance optimization.</p>
+                            <div class="feature-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon green-gradient">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4 class="feature-title">24/7 Support</h4>
+                            <p class="feature-description">Round-the-clock technical support with dedicated experts to ensure your systems run flawlessly.</p>
+                            <div class="feature-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Tech Stack Section -->
+    <section class="modern-tech-section">
+        <div class="tech-bg-elements">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-circle circle-3"></div>
+            <div class="bg-gradient-mesh"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="modern-section-header">
+                        <span class="tech-badge">
+                            <i class="fas fa-code"></i>
+                            Technology Stack
+                        </span>
+                        <h2 class="modern-tech-title">
+                            Cutting-Edge
+                            <span class="gradient-highlight">Technologies</span>
+                            <br>We Master
+                        </h2>
+                        <p class="tech-description">
+                            Leveraging the latest tools and frameworks to build exceptional digital experiences
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="tech-categories">
+                        <!-- Frontend Technologies -->
+                        <div class="tech-category frontend-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3 class="category-title">Frontend</h3>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="modern-tech-card react-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="modern-tech-card vue-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-vuejs"></i>
+                                    <span>Vue.js</span>
+                                </div>
+                                <div class="modern-tech-card angular-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-angular"></i>
+                                    <span>Angular</span>
+                                </div>
+                                <div class="modern-tech-card js-card">
+                                    <div class="card-glow"></div>
+                                    <span class="tech-text">JS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="modern-tech-card ts-card">
+                                    <div class="card-glow"></div>
+                                    <span class="tech-text">TS</span>
+                                    <span>TypeScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Backend Technologies -->
+                        <div class="tech-category backend-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3 class="category-title">Backend</h3>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="modern-tech-card node-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="modern-tech-card python-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="modern-tech-card php-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="modern-tech-card laravel-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-laravel"></i>
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="modern-tech-card express-card">
+                                    <div class="card-glow"></div>
+                                    <span class="tech-text">EX</span>
+                                    <span>Express</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Design & DevOps -->
+                        <div class="tech-category design-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3 class="category-title">Design & DevOps</h3>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="modern-tech-card figma-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-figma"></i>
+                                    <span>Figma</span>
+                                </div>
+                                <div class="modern-tech-card adobe-card">
+                                    <div class="card-glow"></div>
+                                    <span class="tech-text">Ps</span>
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="modern-tech-card docker-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="modern-tech-card aws-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                                <div class="modern-tech-card git-card">
+                                    <div class="card-glow"></div>
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner Section -->
+    <section class="scp-stats-section" aria-label="Key company statistics">
+        <div class="container">
+            <div class="scp-stats-banner" role="list">
+                <div class="scp-stat-item bg-primary" role="listitem">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="scp-stat-item bg-primary" role="listitem">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="scp-stat-item bg-primary" role="listitem">
+                    <div class="stat-value">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="scp-stat-item bg-primary" role="listitem">
+                    <div class="stat-value">5 <i class="fas fa-star" aria-hidden="true"></i></div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+    <!-- Pricing Plans Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Our Business Pricing Plans</span>
+                        <h2 class="pricing-title">
+                            Our Business <span class="gradient-highlight">Pricing Plans</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- Standard Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card standard-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Standard</h3>
+                            <p class="plan-subtitle">For Personal Usage</p>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$299.99</span>
+                            <span class="period">Per Month</span>
+                        </div>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Custom Web Development</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Mobile App Development</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>24/7 Email Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Basic Maintenance</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn standard-btn">BUY NOW</button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card premium-card featured">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Premium</h3>
+                            <p class="plan-subtitle">For Small Business</p>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$499.99</span>
+                            <span class="period">Per Month</span>
+                        </div>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Full Stack Development</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Database Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>24/7 Priority Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Advanced Security</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn premium-btn">BUY NOW</button>
+                    </div>
+                </div>
+
+                <!-- Exclusive Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card exclusive-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Exclusive</h3>
+                            <p class="plan-subtitle">For Enterprise Level</p>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$799.99</span>
+                            <span class="period">Per Month</span>
+                        </div>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Enterprise Solutions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Cloud Infrastructure</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>24/7 Dedicated Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Custom Integrations</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn exclusive-btn">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Creative Testimonials Section -->
+    <section class="scp-modern-testimonials py-5">
+        <div class="container">
+            <!-- Header with Creative Design -->
+            <div class="scp-testimonials-header">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="scp-header-content">
+                            <div class="scp-badge">
+                                <i class="fas fa-quote-right"></i>
+                                <span>Client Stories</span>
+                            </div>
+                            <h2 class="scp-main-title">
+                                What Our <span class="scp-gradient-text">Amazing Clients</span> Say About Us
+                            </h2>
+                            <p class="scp-subtitle">Discover why industry leaders trust us with their most important projects</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="scp-stats-grid">
+                            <div class="scp-stat-card">
+                                <div class="scp-stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="scp-stat-info">
+                                    <span class="scp-stat-num" data-count="250">0</span>
+                                    <span class="scp-stat-text">Happy Clients</span>
+                                </div>
+                            </div>
+                            <div class="scp-stat-card">
+                                <div class="scp-stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="scp-stat-info">
+                                    <span class="scp-stat-num" data-count="4.9">0</span>
+                                    <span class="scp-stat-text">Rating</span>
+                                </div>
+                            </div>
+                            <div class="scp-stat-card">
+                                <div class="scp-stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="scp-stat-info">
+                                    <span class="scp-stat-num" data-count="98">0</span>%
+                                    <span class="scp-stat-text">Success Rate</span>
+                                </div>
+                            </div>
+                            <div class="scp-stat-card">
+                                <div class="scp-stat-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="scp-stat-info">
+                                    <span class="scp-stat-num" data-count="500">0</span>+
+                                    <span class="scp-stat-text">Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="scp-testimonials-grid">
+                <div class="row g-4">
+                    <!-- Featured Testimonial -->
+                    <div class="col-lg-6">
+                        <div class="scp-featured-testimonial">
+                            <div class="scp-testimonial-bg">
+                                <div class="scp-quote-large">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                            </div>
+                            <div class="scp-testimonial-body">
+                                <p class="scp-testimonial-quote">
+                                    "Working with SoftCode Pro has been an absolute game-changer for our business. Their innovative approach and attention to detail exceeded all our expectations."
+                                </p>
+                                <div class="scp-client-info">
+                                    <div class="scp-client-avatar">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Jeff Stroman">
+                                        <div class="scp-avatar-status"></div>
+                                    </div>
+                                    <div class="scp-client-details">
+                                        <h4 class="scp-client-name">Jeff Stroman</h4>
+                                        <span class="scp-client-role">CEO, TechCorp</span>
+                                        <div class="scp-rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="scp-project-info">
+                                        <div class="scp-project-badge">
+                                            <span>Web Platform</span>
+                                        </div>
+                                        <div class="scp-project-scope">
+                                            <div class="scp-scope-item">
+                                                <i class="fas fa-code"></i>
+                                                <span>Full Stack Development</span>
+                                            </div>
+                                            <div class="scp-scope-item">
+                                                <i class="fas fa-mobile-alt"></i>
+                                                <span>Responsive Design</span>
+                                            </div>
+                                            <div class="scp-scope-item">
+                                                <i class="fas fa-database"></i>
+                                                <span>Database Integration</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Testimonials -->
+                    <div class="col-lg-6">
+                        <div class="scp-side-testimonials">
+                            <!-- Testimonial 2 -->
+                            <div class="scp-compact-testimonial">
+                                <div class="scp-compact-header">
+                                    <div class="scp-client-avatar-small">
+                                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Ning Asih">
+                                    </div>
+                                    <div class="scp-client-meta">
+                                        <h5 class="scp-client-name">Ning Asih</h5>
+                                        <span class="scp-client-role">Marketing Director</span>
+                                    </div>
+                                    <div class="scp-rating-compact">
+                                        <i class="fas fa-star"></i>
+                                        <span>5.0</span>
+                                    </div>
+                                </div>
+                                <p class="scp-compact-quote">
+                                    "Exceptional service and outstanding results. The team delivered beyond our expectations with their mobile app development."
+                                </p>
+                                <div class="scp-project-tags">
+                                    <span class="scp-tag-primary">Mobile App</span>
+                                    <span class="scp-tag-secondary">4 Months</span>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- Testimonial 3 -->
+                            <div class="scp-compact-testimonial">
+                                <div class="scp-compact-header">
+                                    <div class="scp-client-avatar-small">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Ray O'Kon">
+                                    </div>
+                                    <div class="scp-client-meta">
+                                        <h5 class="scp-client-name">Ray O'Kon</h5>
+                                        <span class="scp-client-role">Tech Lead</span>
+                                    </div>
+                                    <div class="scp-rating-compact">
+                                        <i class="fas fa-star"></i>
+                                        <span>5.0</span>
+                                    </div>
+                                </div>
+                                <p class="scp-compact-quote">
+                                    "Professional, reliable, and innovative. Their e-commerce solution transformed our online presence completely."
+                                </p>
+                                <div class="scp-project-tags">
+                                    <span class="scp-tag-primary">E-commerce</span>
+                                    <span class="scp-tag-secondary">8 Months</span>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="scp-compact-testimonial">
+                                <div class="scp-compact-header">
+                                    <div class="scp-client-avatar-small">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="scp-client-meta">
+                                        <h5 class="scp-client-name">Sarah Johnson</h5>
+                                        <span class="scp-client-role">Product Manager</span>
+                                    </div>
+                                    <div class="scp-rating-compact">
+                                        <i class="fas fa-star"></i>
+                                        <span>5.0</span>
+                                    </div>
+                                </div>
+                                <p class="scp-compact-quote">
+                                    "Amazing team with incredible expertise. They turned our vision into reality with their custom software solution."
+                                </p>
+                                <div class="scp-project-tags">
+                                    <span class="scp-tag-primary">Custom Software</span>
+                                    <span class="scp-tag-secondary">6 Months</span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="scp-trust-section">
+                <div class="scp-trust-header">
+                    <h3>Trusted by Industry Leaders</h3>
+                </div>
+                <div class="scp-trust-logos">
+                    <div class="scp-trust-item">
+                        <div class="scp-trust-logo">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <span>Microsoft Partner</span>
+                    </div>
+                    <div class="scp-trust-item">
+                        <div class="scp-trust-logo">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span>AWS Certified</span>
+                    </div>
+                    <div class="scp-trust-item">
+                        <div class="scp-trust-logo">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span>Google Partner</span>
+                    </div>
+                    <div class="scp-trust-item">
+                        <div class="scp-trust-logo">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>ISO Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <span class="section-subtitle">Our Work</span>
+                    <h2 class="section-title">Portfolio & Case Studies</h2>
+                    <p class="section-description">Explore our latest projects and see how we've helped businesses transform their digital presence</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-badge">Featured</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="E-commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary me-2"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-outline-light"><i class="fas fa-book-open me-1"></i> Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">E-commerce</span>
+                                <span class="project-duration"><i class="far fa-clock me-1"></i> 4 Months</span>
+                            </div>
+                            <h3>ShopEase Pro</h3>
+                            <p class="project-description">A complete e-commerce solution with payment integration, inventory management, and real-time analytics.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Secure Payment Gateway</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Inventory Management</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> User Dashboard</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-client">
+                                <span class="client-label">Client:</span>
+                                <span class="client-name">FashionHub Ltd.</span>
+                            </div>
+                            
+                            <div class="project-tags">
+                                <span><i class="fab fa-react me-1"></i> React</span>
+                                <span><i class="fab fa-node-js me-1"></i> Node.js</span>
+                                <span><i class="fas fa-database me-1"></i> MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-badge">Popular</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="TaskMaster Pro" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary me-2"><i class="fas fa-external-link-alt me-1"></i> App Store</a>
+                                    <a href="#" class="btn btn-outline-light"><i class="fas fa-book-open me-1"></i> Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Productivity</span>
+                                <span class="project-duration"><i class="far fa-clock me-1"></i> 3 Months</span>
+                            </div>
+                            <h3>TaskMaster Pro</h3>
+                            <p class="project-description">A powerful task management application with team collaboration features and real-time updates.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Real-time Sync</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Team Collaboration</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Cloud Backup</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-client">
+                                <span class="client-label">Client:</span>
+                                <span class="client-name">TechSolutions Inc.</span>
+                            </div>
+                            
+                            <div class="project-tags">
+                                <span><i class="fab fa-react me-1"></i> React Native</span>
+                                <span><i class="fas fa-fire me-1"></i> Firebase</span>
+                                <span><i class="fas fa-sync-alt me-1"></i> Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="project-card">
+                        <div class="project-badge">New</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Global Finance Corp" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary me-2"><i class="fas fa-external-link-alt me-1"></i> Visit Site</a>
+                                    <a href="#" class="btn btn-outline-light"><i class="fas fa-book-open me-1"></i> Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Corporate</span>
+                                <span class="project-duration"><i class="far fa-clock me-1"></i> 2 Months</span>
+                            </div>
+                            <h3>Global Finance Corp</h3>
+                            <p class="project-description">A professional corporate website with CMS integration and multilingual support.</p>
+                            
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> CMS Integration</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Multilingual Support</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> SEO Optimized</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-client">
+                                <span class="client-label">Client:</span>
+                                <span class="client-name">Global Finance Corp</span>
+                            </div>
+                            
+                            <div class="project-tags">
+                                <span><i class="fab fa-wordpress me-1"></i> WordPress</span>
+                                <span><i class="fab fa-php me-1"></i> PHP</span>
+                                <span><i class="fab fa-js me-1"></i> JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="#" class="btn btn-primary btn-lg">
+                        Explore All Projects
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    
+
+    <!-- Process Timeline Section -->
+    <section id="process" class="scp-process-section py-5 position-relative overflow-hidden" >
+        <div class="container position-relative">
+            <div class="scp-process-header text-center mb-5">
+                <span class="scp-process-subtitle">Process Timeline</span>
+                <h2 class="scp-process-title">How We Work</h2>
+                <div class="scp-process-divider"></div>
+                <p class="scp-process-description">From idea to deployment, we collaborate at every step to deliver impact.</p>
+            </div>
+
+            <div class="scp-process-wrapper">
+                <!-- Progress Track -->
+                <div class="scp-process-track" role="progressbar" aria-label="Project progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div class="progress-fill" id="processProgressFill"></div>
+                </div>
+
+                <!-- Steps -->
+                <div class="row g-4 scp-process-steps">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="1" tabindex="0" aria-current="step">
+                            <div class="step-badge">01</div>
+                            <div class="step-icon"><i class="fas fa-clipboard-list"></i></div>
+                            <h5 class="step-title">Requirement Gathering</h5>
+                            <p class="step-desc">Understand goals, scope, and success criteria.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="2" tabindex="0">
+                            <div class="step-badge">02</div>
+                            <div class="step-icon"><i class="fas fa-pen-nib"></i></div>
+                            <h5 class="step-title">UI/UX Design</h5>
+                            <p class="step-desc">Wireframes and polished UI for delightful experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="3" tabindex="0">
+                            <div class="step-badge">03</div>
+                            <div class="step-icon"><i class="fas fa-code"></i></div>
+                            <h5 class="step-title">Development</h5>
+                            <p class="step-desc">Implement features with clean, scalable code.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="4" tabindex="0">
+                            <div class="step-badge">04</div>
+                            <div class="step-icon"><i class="fas fa-bug"></i></div>
+                            <h5 class="step-title">Testing & QA</h5>
+                            <p class="step-desc">Verify quality with rigorous tests and reviews.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="5" tabindex="0">
+                            <div class="step-badge">05</div>
+                            <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                            <h5 class="step-title">Deployment</h5>
+                            <p class="step-desc">Launch to production with CI/CD best practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="process-step" data-step="6" tabindex="0">
+                            <div class="step-badge">06</div>
+                            <div class="step-icon"><i class="fas fa-life-ring"></i></div>
+                            <h5 class="step-title">Support & Maintenance</h5>
+                            <p class="step-desc">Monitor, optimize, and evolve continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="scp-contact-section py-5 position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div class="scp-contact-header text-center mb-5">
+                <span class="scp-contact-subtitle">Get In Touch</span>
+                <h2 class="scp-contact-title">Contact Us</h2>
+                <div class="scp-contact-divider"></div>
+                <p class="scp-contact-description">Have a project in mind or want to know more? Drop us a message and we'll get back to you soon.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="scp-contact-form-card scp-glass-card p-4 p-lg-5">
+                        <form id="scpContactForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="scp-form-group">
+                                        <label for="scpName" class="form-label">Your Name</label>
+                                        <div class="input-group">
+                                            <span class="scp-input-group-text"><i class="fas fa-user"></i></span>
+                                            <input type="text" class="form-control" id="scpName" required placeholder="Please enter your name">
+                                            <div class="scp-invalid-feedback">Please enter your name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="scp-form-group">
+                                        <label for="scpEmail" class="form-label">Email Address</label>
+                                        <div class="input-group">
+                                            <span class="scp-input-group-text"><i class="fas fa-envelope"></i></span>
+                                            <input type="email" class="form-control" id="scpEmail" required placeholder="Please enter a valid email">
+                                            <div class="scp-invalid-feedback">Please enter a valid email</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="scp-form-group">
+                                        <label for="scpSubject" class="form-label">Subject</label>
+                                        <div class="input-group">
+                                            <span class="scp-input-group-text"><i class="fas fa-tag"></i></span>
+                                            <input type="text" class="form-control" id="scpSubject" required placeholder="Please enter a subject">
+                                            <div class="scp-invalid-feedback">Please enter a subject</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="scp-form-group">
+                                        <label for="scpMessage" class="form-label">Your Message</label>
+                                        <div class="input-group">
+                                            <span class="scp-input-group-text align-items-start pt-2"><i class="fas fa-comment-dots"></i></span>
+                                            <textarea class="form-control" id="scpMessage" rows="5" required placeholder="Please enter your message"></textarea>
+                                            <div class="scp-invalid-feedback">Please enter your message</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 scp-submit-btn">
+                                        <span class="me-2">Send Message</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="scp-contact-info-wrapper">
+                        <!-- Contact Info Card 1 -->
+                        <div class="scp-contact-info-card scp-glass-card mb-4">
+                            <div class="scp-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="scp-contact-details">
+                                <h4>Our Location</h4>
+                                <p>123 Tech Street, Silicon Valley, CA 94025, USA</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info Card 2 -->
+                        <div class="scp-contact-info-card scp-glass-card mb-4">
+                            <div class="scp-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="scp-contact-details">
+                                <h4>Email Us</h4>
+                                <p>info@softcodepro.com</p>
+                                <p>support@softcodepro.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info Card 3 -->
+                        <div class="scp-contact-info-card scp-glass-card">
+                            <div class="scp-contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="scp-contact-details">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="scp-social-links mt-4 text-center">
+                            <a href="#" class="scp-social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="scp-social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="scp-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="scp-social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="scp-social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="scp-contact-shape-1"></div>
+        <div class="scp-contact-shape-2"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="scp-footer">
+        <div class="footer-bg-elements">
+            <div class="bg-circle circle-a"></div>
+            <div class="bg-circle circle-b"></div>
+        </div>
+        <div class="container">
+            <div class="row g-4 align-items-start scp-footer-top">
+                <div class="col-lg-4">
+                    <div class="scp-footer-brand">
+                        <div class="brand-logo">
+                            <img src="../images/logo.png" alt="SoftCode Pro" class="footer-logo">
+                        </div>
+                        <p class="brand-text">We craft modern digital products with performance, security, and exceptional user experience.</p>
+                        <div class="scp-footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="protfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="index.html#pricing">pricing</a></li>
+                        <li><a href="index.html#process">process</a></li>
+                        <li><a href="contact.html#FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="footer-title">Stay in the loop</h6>
+                    <p class="footer-note">Subscribe to get product updates, news and special offers.</p>
+                    <form class="footer-subscribe-form" action="#" method="post" onsubmit="return false;">
+                        <div class="footer-subscribe">
+                            <input type="email" class="footer-input" placeholder="Enter your email" aria-label="Email address">
+                            <button class="footer-btn" type="submit">
+                                <span>Subscribe</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="scp-footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="bottom-row">
+                    <p class="copyright">© 2025 SoftCode Pro. All rights reserved.</p>
+                    <div class="bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="sep">•</span>
+                        <a href="#">Terms</a>
+                        <span class="sep">•</span>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Details Modal -->
+    <div class="modal fade scp-service-modal" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header scp-modal-header">
+                    <div class="scp-modal-icon">
+                        <i id="serviceModalIcon" class="fas fa-code"></i>
+                    </div>
+                    <h5 class="modal-title" id="serviceModalLabel">Service</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="serviceModalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animated Counter Functionality
+            function animateCounters() {
+                const counters = document.querySelectorAll('.scp-stat-counter');
+                const speed = 200; // The lower the faster
+                
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                        counter.classList.add('animated');
+                    }
+                });
+            }
+            
+            // Intersection Observer to trigger animation when section is in view
+            const statsSection = document.querySelector('.scp-stats-section');
+            let animated = false;
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !animated) {
+                        animateCounters();
+                        animated = true;
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+            const contactForm = document.getElementById('scpContactForm');
+            const submitBtn = document.getElementById('scpSubmitBtn');
+            const submitSpinner = document.getElementById('scpSubmitSpinner');
+            const submitText = document.getElementById('scpSubmitText');
+            const successAlert = document.getElementById('scpSuccessAlert');
+
+            // Form validation and submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // Check form validity
+                    if (!contactForm.checkValidity()) {
+                        event.stopPropagation();
+                        contactForm.classList.add('was-validated');
+                        return;
+                    }
+
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Sending...';
+                    submitSpinner.classList.remove('d-none');
+
+                    // Simulate form submission (replace with actual AJAX call)
+                    setTimeout(function() {
+                        // Get form data
+                        const formData = {
+                            name: document.getElementById('scpName').value,
+                            email: document.getElementById('scpEmail').value,
+                            subject: document.getElementById('scpSubject').value,
+                            message: document.getElementById('scpMessage').value
+                        };
+                        
+                        console.log('Form submitted:', formData);
+                        
+                        // Hide loading state
+                        submitBtn.disabled = false;
+                        submitText.textContent = 'Send Message';
+                        submitSpinner.classList.add('d-none');
+                        
+                        // Show success message
+                        successAlert.classList.remove('d-none');
+                        successAlert.classList.add('show');
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(function() {
+                            successAlert.classList.add('scp-fade-out');
+                            setTimeout(function() {
+                                successAlert.classList.remove('show', 'scp-fade-out');
+                            }, 300);
+                        }, 5000);
+                        
+                        // Reset form
+                        contactForm.reset();
+                        contactForm.classList.remove('was-validated');
+                    }, 1500);
+                });
+
+                // Real-time validation feedback
+                const formInputs = contactForm.querySelectorAll('.form-control');
+                formInputs.forEach(input => {
+                    input.addEventListener('input', function() {
+                        if (input.checkValidity()) {
+                            input.classList.remove('is-invalid');
+                            input.classList.add('is-valid');
+                        } else {
+                            input.classList.remove('is-valid');
+                            input.classList.add('is-invalid');
+                        }
+                    });
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+        
+        // Service Details and Modal Handling
+        let currentServiceKey = null;
+        const serviceDetails = {
+            custom: {
+                icon: 'fas fa-code',
+                en: {
+                    title: 'Custom Software Development',
+                    desc: [
+                        'Tailor‑made web, mobile, and desktop applications built with modern architectures and best practices.',
+                        'Secure, scalable, and maintainable codebases delivered with CI/CD and quality engineering.'
+                    ],
+                    features: [
+                        'Full‑stack development (React, Vue, Angular, Node, Laravel, .NET)',
+                        'Clean Architecture & SOLID patterns',
+                        'Automated testing and CI/CD pipelines',
+                        'API design and third‑party integrations'
+                    ]
+                },
+                si: {
+                    title: 'අභිරුචි මෘදුකාංග සංවර්ධනය',
+                    desc: [
+                        'ඔබගේ ව්‍යාපාර අවශ්‍යතා සඳහා මනාකොට සකස් කළ වෙබ්, මොබයිල් සහ ඩෙස්ක්ටොප් යෙදුම්.',
+                        'ආරක්ෂිත, විශාලනය කළ හැකි, නඩත්තු කරගත හැකි කේත CI/CD සහ ගুণාත්මක ඉංජිනේරුවරිය සමඟ.'
+                    ],
+                    features: [
+                        'Full‑stack සංවර්ධනය (React, Vue, Angular, Node, Laravel, .NET)',
+                        'Clean Architecture සහ SOLID රටා',
+                        'ස්වයංක්‍රීය පරීක්ෂණ සහ CI/CD',
+                        'API නිර්මාණය සහ තෙවන පාර්ශ්ව ඒකාබද්ධකරණ'
+                    ]
+                }
+            },
+            cloud: {
+                icon: 'fas fa-cloud',
+                en: {
+                    title: 'Cloud & DevOps',
+                    desc: [
+                        'Design, deploy, and operate on AWS/Azure with robust security, monitoring, and cost control.',
+                        'Infrastructure as Code, containers, and automated delivery for faster, safer releases.'
+                    ],
+                    features: [
+                        'Cloud architecture (AWS, Azure) & migrations',
+                        'Docker, Kubernetes, and serverless',
+                        'CI/CD (GitHub Actions, GitLab CI, Azure DevOps)',
+                        'Observability (logs, metrics, alerts) & FinOps'
+                    ]
+                },
+                si: {
+                    title: 'ක്ലවුඩ් සහ ඩෙව්ඔප්ස්',
+                    desc: [
+                        'AWS/Azure මත ආරක්ෂාව, නිරීක්ෂණය, සහ වියදම් පාලනය සමඟ නිර්මාණය සහ දියත් කිරීම.',
+                        'Infrastructure as Code, කන්ටේනර්, සහ ස්වයංක්‍රීය බෙදාහැරීම වේගවත් සහ නිවෙසවයි.'
+                    ],
+                    features: [
+                        'ක්ලවුඩ් ව්‍යුහ සැලසුම් සහ මයිග්‍රේෂන් (AWS, Azure)',
+                        'Docker, Kubernetes, Serverless',
+                        'CI/CD (GitHub Actions, GitLab CI, Azure DevOps)',
+                        'Observability (ලොග්, මැට්‍රික්ස්, ඇලර්ට්) සහ FinOps'
+                    ]
+                }
+            },
+            dataai: {
+                icon: 'fas fa-brain',
+                en: {
+                    title: 'Data & AI Solutions',
+                    desc: [
+                        'Analytics, dashboards, and automation to turn your data into better decisions and growth.',
+                        'From ETL pipelines to LLM‑powered assistants and production‑grade ML.'
+                    ],
+                    features: [
+                        'BI dashboards and data visualization',
+                        'ETL/ELT pipelines and data warehousing',
+                        'LLM automation, NLP, and chatbots',
+                        'MLOps and model deployment'
+                    ]
+                },
+                si: {
+                    title: 'දත්ත හා AI විසඳුම්',
+                    desc: [
+                        'විශ්ලේෂණ, ඩෑෂ්බෝඩ් සහ ස්වයංක්‍රීය කිරීම මගින් දත්ත තීරණ සකස් කර වර්ධනයට පාරිභෝගික කරයි.',
+                        'ETL පයිප්ලයින් වලින් LLM බලපෑම් සහකාරයන් දක්වා නිෂ්පාදන ගුණාත්මක ML වරක්.'
+                    ],
+                    features: [
+                        'BI ඩෑෂ්බෝඩ් සහ දත්ත දසුන්කරණය',
+                        'ETL/ELT පයිප්ලයින් සහ ගබඩාගත කිරීම',
+                        'LLM ස්වයංක්‍රීය කිරීම, NLP, චැට්බොට්',
+                        'MLOps සහ මාදිලි යොමු කිරීම'
+                    ]
+                }
+            },
+            design: {
+                icon: 'fas fa-paint-brush',
+                en: {
+                    title: 'UI/UX Design',
+                    desc: [
+                        'Human‑centered design from wireframes to pixel‑perfect interfaces that convert and delight.',
+                        'Accessible, scalable design systems aligned with your brand.'
+                    ],
+                    features: [
+                        'User research, flows, and wireframes',
+                        'High‑fidelity UI and interactive prototypes',
+                        'Design systems & accessibility (WCAG)',
+                        'Figma and Adobe XD workflows'
+                    ]
+                },
+                si: {
+                    title: 'UI/UX නිර්මාණය',
+                    desc: [
+                        'වයර්ෆ්‍රේම් සිට පික්සල් නිවැරදි අතුරුමුහුණත් දක්වා මනුෂ්‍ය මධ්‍යස්ථිත නිර්මාණය.',
+                        'ඔබේ වෙළඳ නාමයට ගැළපෙන ව්‍යුහගත, ප්‍රවේශව ඇති ඩිසායින් පද්ධති.'
+                    ],
+                    features: [
+                        'පරිශීලක ගවේෂණ, ප්‍රවහණ සහ වයර්ෆ්‍රේම්',
+                        'High‑fidelity UI සහ ක්‍රියාකාරී ප්‍රොටෝටයිප්',
+                        'Design systems සහ ප්‍රවේශය (WCAG)',
+                        'Figma / Adobe XD ප්‍රවාහ'
+                    ]
+                }
+            },
+            support: {
+                icon: 'fas fa-headset',
+                en: {
+                    title: 'Managed Support',
+                    desc: [
+                        'Proactive monitoring, incident response, and performance tuning around the clock.',
+                        'SLA‑backed support with clear reporting and continuous improvements.'
+                    ],
+                    features: [
+                        '24/7 monitoring and alerting',
+                        'SLA‑backed helpdesk & incident response',
+                        'Security patching and backups',
+                        'Performance optimization'
+                    ]
+                },
+                si: {
+                    title: 'කලමනාකරණ සහාය',
+                    desc: [
+                        'නිරීක්ෂණ, ඉක්මන් ප්‍රතිචාර සහ කාර්ය සාධන සුසර කිරීම - දිනපතා 24/7.',
+                        'SLA ආධාරක සහ පැහැදිලි වාර්තා කර තදාප්‍රසංග පූරණ.'
+                    ],
+                    features: [
+                        '24/7 නිරීක්ෂණය සහ ඇලර්ට්',
+                        'SLA සහිත හෙල්ප්ඩෙස්ක් සහ ඉන්සිඩන්ට් ප්‍රතිචාර',
+                        'ආරක්ෂණ යාවත්කාලීන හා බේකප්',
+                        'කාර්ය සාධන සවිබලගැන්වීම'
+                    ]
+                }
+            }
+        };
+
+        function populateServiceModal(key, lang) {
+            const item = serviceDetails[key];
+            if (!item) return;
+            const locale = item[lang] || item['en'];
+            const titleEl = document.getElementById('serviceModalLabel');
+            const iconEl = document.getElementById('serviceModalIcon');
+            const bodyEl = document.getElementById('serviceModalBody');
+            if (titleEl) titleEl.textContent = locale.title;
+            if (iconEl) iconEl.className = item.icon;
+            if (bodyEl) {
+                let html = '';
+                (locale.desc || []).forEach(p => {
+                    html += `<p class="scp-modal-text">${p}</p>`;
+                });
+                if (locale.features && locale.features.length) {
+                    html += '<ul class="scp-modal-list">' + locale.features.map(f => `<li><i class="fas fa-check-circle"></i><span>${f}</span></li>`).join('') + '</ul>';
+                }
+                bodyEl.innerHTML = html;
+            }
+        }
+
+        // Attach handlers to service cards
+        (function initServiceCards() {
+            const cards = document.querySelectorAll('.service-card[data-service]');
+            const modalEl = document.getElementById('serviceModal');
+            const openModal = (key) => {
+                currentServiceKey = key;
+                const lang = localStorage.getItem('language') || 'en';
+                populateServiceModal(key, lang);
+                const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                modal.show();
+            };
+            cards.forEach(card => {
+                const key = card.getAttribute('data-service');
+                if (!key) return;
+                card.addEventListener('click', () => openModal(key));
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openModal(key);
+                    }
+                });
+            });
+            if (modalEl) {
+                modalEl.addEventListener('hidden.bs.modal', () => {
+                    currentServiceKey = null;
+                });
+            }
+        })();
+
+        
+
+    
+
+        // Testimonial Slider Functionality
+        let currentTestimonialIndex = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.dot');
+        let autoSlideInterval;
+
+        function showTestimonial(index) {
+            // Remove active class from all testimonials and dots
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Add active class to current testimonial and dot
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function changeTestimonial(direction) {
+            currentTestimonialIndex += direction;
+            
+            if (currentTestimonialIndex >= testimonials.length) {
+                currentTestimonialIndex = 0;
+            } else if (currentTestimonialIndex < 0) {
+                currentTestimonialIndex = testimonials.length - 1;
+            }
+            
+            showTestimonial(currentTestimonialIndex);
+            resetAutoSlide();
+        }
+
+        function currentTestimonial(index) {
+            currentTestimonialIndex = index - 1;
+            showTestimonial(currentTestimonialIndex);
+            resetAutoSlide();
+        }
+
+        function nextTestimonial() {
+            currentTestimonialIndex++;
+            if (currentTestimonialIndex >= testimonials.length) {
+                currentTestimonialIndex = 0;
+            }
+            showTestimonial(currentTestimonialIndex);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextTestimonial, 5000); // Change every 5 seconds
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Initialize testimonial slider when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (testimonials.length > 0) {
+                showTestimonial(0);
+                startAutoSlide();
+                
+                // Pause auto-slide on hover
+                const testimonialSlider = document.querySelector('.testimonial-slider');
+                if (testimonialSlider) {
+                    testimonialSlider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+                    testimonialSlider.addEventListener('mouseleave', startAutoSlide);
+                }
+            }
+        });
+
+        // Language Switch Functionality
+        function switchLanguage(lang) {
+            const currentLangSpan = document.getElementById('currentLang');
+            const elements = {
+                products: document.querySelector('a[href="#products"]'),
+                services: document.querySelector('a[href="#services"]'),
+                about: document.querySelector('a[href="#about"]'),
+                contacts: document.querySelector('a[href="#contacts"]'),
+                login: document.querySelector('a[href="#login"]'),
+                signup: document.querySelector('a[href="#signup"]'),
+                title: document.querySelector('.hero-title'),
+                description: document.querySelector('.hero-description'),
+                readMore: document.querySelector('.read-more-btn')
+            };
+
+            // Update text content
+            if (translations[lang]) {
+                Object.keys(elements).forEach(key => {
+                    if (!elements[key] || !translations[lang][key]) return;
+                    // Do not overwrite hero title; it is controlled by the typewriter
+                    if (key === 'title') return;
+                    elements[key].textContent = translations[lang][key];
+                });
+
+                // Update current language display
+                currentLangSpan.textContent = lang.toUpperCase();
+                
+                // Save language preference
+                localStorage.setItem('language', lang);
+
+                // If a service modal is open, re-render it with the new language
+                const modalEl = document.getElementById('serviceModal');
+                if (modalEl && modalEl.classList.contains('show') && currentServiceKey) {
+                    populateServiceModal(currentServiceKey, lang);
+                }
+            }
+        }
+
+        // Initialize theme and language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.getElementById('themeIcon').className = 'fas fa-sun';
+            }
+
+            // Load saved language
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            switchLanguage(savedLanguage);
+        });
+
+
+
+         // Add scroll animation
+         window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.mission-card');
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if(cardTop < triggerBottom) {
+                    card.classList.add('animate-card');
+                }
+            });
+        });
+
+        // Add hover effect sound (optional)
+        document.querySelectorAll('.mission-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+    </script>
+
+    <script src="site.js" defer></script>
+
+    <!-- How We Work: Timeline Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const section = document.getElementById('process');
+            const steps = Array.from(document.querySelectorAll('.scp-process-section .process-step'));
+            const track = document.querySelector('.scp-process-section .scp-process-track');
+            const progress = document.getElementById('processProgressFill');
+            if (!section || !steps.length || !track || !progress) return;
+
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function updateProgress() {
+                const activeCount = steps.filter(s => s.classList.contains('active')).length;
+                const percent = Math.min(100, Math.round((activeCount / steps.length) * 100));
+                progress.style.width = percent + '%';
+                track.setAttribute('aria-valuenow', String(percent));
+
+                // Update aria-current on the last active step
+                const lastIdx = Math.max(-1, steps.reduce((acc, s, i) => s.classList.contains('active') ? i : acc, -1));
+                steps.forEach((s, i) => {
+                    if (i === lastIdx) {
+                        s.setAttribute('aria-current', 'step');
+                    } else {
+                        s.removeAttribute('aria-current');
+                    }
+                });
+            }
+
+            // Observe steps entering the viewport
+            const stepObserver = new IntersectionObserver((entries) => {
+                let changed = false;
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+                        if (!entry.target.classList.contains('active')) {
+                            entry.target.classList.add('active');
+                            changed = true;
+                        }
+                    }
+                });
+                if (changed) updateProgress();
+            }, { threshold: [0.6] });
+
+            steps.forEach(step => {
+                stepObserver.observe(step);
+                // Keyboard support to mark progress on focus/enter
+                step.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        step.classList.add('active');
+                        updateProgress();
+                    }
+                });
+                step.addEventListener('focus', () => {
+                    step.classList.add('active');
+                    updateProgress();
+                });
+            });
+
+            // When section appears, optionally stagger-activate steps
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    if (prefersReduced) {
+                        steps.forEach(s => s.classList.add('active'));
+                        updateProgress();
+                    } else {
+                        steps.forEach((s, i) => setTimeout(() => { s.classList.add('active'); updateProgress(); }, i * 160));
+                    }
+                    sectionObserver.disconnect();
+                });
+            }, { threshold: 0.2 });
+            sectionObserver.observe(section);
+
+            // Initialize starting values
+            updateProgress();
+        });
+    </script>
+
+    <!-- Modern Testimonials Slider Script -->
+    <script>
+        let currentTestimonial = 1;
+        const totalTestimonials = 3;
+        let testimonialInterval;
+
+        function showTestimonial(index) {
+            // Hide all testimonial cards
+            document.querySelectorAll('.testimonial-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Update indicators
+            document.querySelectorAll('.indicator').forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+            
+            // Show selected testimonial
+            const selectedCard = document.querySelector(`[data-testimonial="${index}"]`);
+            const selectedIndicator = document.querySelector(`[data-slide="${index}"]`);
+            
+            if (selectedCard) selectedCard.classList.add('active');
+            if (selectedIndicator) selectedIndicator.classList.add('active');
+            
+            currentTestimonial = index;
+        }
+
+        function changeTestimonial(direction) {
+            let newIndex = currentTestimonial + direction;
+            
+            if (newIndex > totalTestimonials) {
+                newIndex = 1;
+            } else if (newIndex < 1) {
+                newIndex = totalTestimonials;
+            }
+            
+            showTestimonial(newIndex);
+            resetAutoSlide();
+        }
+
+        function currentTestimonial(index) {
+            showTestimonial(index);
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(testimonialInterval);
+            startAutoSlide();
+        }
+
+        function startAutoSlide() {
+            testimonialInterval = setInterval(() => {
+                changeTestimonial(1);
+            }, 5000); // Change every 5 seconds
+        }
+
+        // Initialize testimonials on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up indicator click events
+            document.querySelectorAll('.indicator').forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentTestimonial(index + 1);
+                });
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    changeTestimonial(-1);
+                } else if (e.key === 'ArrowRight') {
+                    changeTestimonial(1);
+                }
+            });
+            
+            // Pause auto-slide on hover
+            const testimonialSection = document.querySelector('.testimonial-showcase');
+            if (testimonialSection) {
+                testimonialSection.addEventListener('mouseenter', () => {
+                    clearInterval(testimonialInterval);
+                });
+                
+                testimonialSection.addEventListener('mouseleave', () => {
+                    startAutoSlide();
+                });
+            }
+            
+            // Start auto-slide
+            startAutoSlide();
+            
+            // Initialize first testimonial
+            showTestimonial(1);
+        });
+    </script>
+
+    <!-- Dynamic Text Animation Script (disabled for new hero) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // The hero title is now static with a gradient accent. Disable legacy typewriter logic.
+            return;
+            const phrases = [
+                'Software Development',
+                'Website Development',
+                'Mobile Application Development',
+                'Desktop Application Development',
+                'Application Development',
+                'SaaS Application Development',
+                'AI Solutions'
+            ];
+            const TYPING_SPEED = 60;   // ms per character
+            const ERASING_SPEED = 35;  // ms per character
+            const HOLD_MS = 2600;      // pause after full word
+            const START_DELAY = 400;    // small initial delay
+
+            function getTarget() {
+                let el = document.getElementById('typewriter') || document.querySelector('.dynamic-text-container');
+                if (!el) {
+                    const heroTitle = document.querySelector('.hero-title');
+                    if (heroTitle) {
+                        const span = document.createElement('span');
+                        span.id = 'typewriter';
+                        span.className = 'dynamic-text-container';
+                        // no line break: keep typewriter text inline
+                        heroTitle.appendChild(span);
+                        el = span;
+                    } else {
+                        const span = document.createElement('span');
+                        span.id = 'typewriter';
+                        span.className = 'dynamic-text-container';
+                        document.body.appendChild(span);
+                        el = span;
+                    }
+                }
+                return el;
+            }
+
+            const target = getTarget();
+            // Ensure no static text remains in the hero title
+            const heroTitleEl = target.closest('.hero-title');
+            if (heroTitleEl) {
+                Array.from(heroTitleEl.childNodes).forEach(node => {
+                    if (node !== target) heroTitleEl.removeChild(node);
+                });
+            }
+            let idx = 0;
+            let isTyping = false;
+
+            function type(text, done) {
+                if (isTyping) return; // guard
+                isTyping = true;
+                target.textContent = '';
+                let i = 0;
+                const iv = setInterval(() => {
+                    target.textContent += text.charAt(i++);
+                    if (i >= text.length) {
+                        clearInterval(iv);
+                        isTyping = false;
+                        setTimeout(done, HOLD_MS);
+                    }
+                }, TYPING_SPEED);
+            }
+
+            function erase(done) {
+                if (isTyping) return; // guard
+                isTyping = true;
+                let i = target.textContent.length;
+                const iv = setInterval(() => {
+                    target.textContent = target.textContent.substring(0, --i);
+                    if (i < 0) {
+                        clearInterval(iv);
+                        isTyping = false;
+                        setTimeout(done, 250);
+                    }
+                }, ERASING_SPEED);
+            }
+
+            function loop() {
+                erase(() => {
+                    idx = (idx + 1) % phrases.length;
+                    type(phrases[idx], loop);
+                });
+            }
+
+            setTimeout(() => type(phrases[0], loop), START_DELAY);
+        });
+
+        // Modern Testimonials Animation and Counter
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate statistics on scroll
+            const statNumbers = document.querySelectorAll('.scp-stat-num');
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const animateNumber = (element) => {
+                const targetValue = parseFloat(element.getAttribute('data-count'));
+                const isDecimal = targetValue % 1 !== 0;
+                let currentNumber = 0;
+                const increment = targetValue / 60; // 60 steps for smooth animation
+                const duration = 2000; // 2 seconds
+                const stepTime = duration / 60;
+
+                const timer = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= targetValue) {
+                        currentNumber = targetValue;
+                        clearInterval(timer);
+                    }
+                    
+                    let displayValue = isDecimal ? currentNumber.toFixed(1) : Math.floor(currentNumber);
+                    element.textContent = displayValue;
+                }, stepTime);
+            };
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumber(entry.target);
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            statNumbers.forEach(stat => {
+                statsObserver.observe(stat);
+            });
+
+            // Add scroll-triggered animations for testimonial cards
+            const testimonialCards = document.querySelectorAll('.scp-featured-testimonial, .scp-compact-testimonial');
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            testimonialCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s`;
+                cardObserver.observe(card);
+            });
+
+            // Add hover effects for trust items
+            const trustItems = document.querySelectorAll('.scp-trust-item');
+            trustItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.05)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add parallax effect to background elements
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const testimonialSection = document.querySelector('.scp-modern-testimonials');
+                
+                if (testimonialSection) {
+                    const rate = scrolled * -0.5;
+                    testimonialSection.style.backgroundPosition = `center ${rate}px`;
+                }
+            });
+
+            // Title display is now fixed - no typing effect needed
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav = document.querySelector('.navbar');
+            const onScroll = () => {
+                if (!nav) return;
+                if (window.scrollY > 10) nav.classList.add('navbar-scrolled');
+                else nav.classList.remove('navbar-scrolled');
+            };
+            onScroll();
+            window.addEventListener('scroll', onScroll, { passive: true });
+        });
+    </script>
+
+    <!-- Hero Mouse Parallax and Gradient Controller -->
+    <script>
+        (function() {
+            const hero = document.querySelector('.hero-section');
+            const wave = document.querySelector('.wave-svg');
+            if (!hero) return;
+
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReduced) return; // respect user motion preference
+
+            const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+
+            function setVars(dx, dy) {
+                const maxG = 40;  // px shift for gradient centers
+                const maxP = 18;  // px parallax for layers
+                const mx = clamp(dx * maxG, -maxG, maxG);
+                const my = clamp(dy * maxG, -maxG, maxG);
+                const px = clamp(dx * maxP, -maxP, maxP);
+                const py = clamp(dy * maxP, -maxP, maxP);
+                hero.style.setProperty('--mx', mx + 'px');
+                hero.style.setProperty('--my', my + 'px');
+                hero.style.setProperty('--px', px + 'px');
+                hero.style.setProperty('--py', py + 'px');
+                if (wave) wave.style.transform = `translate3d(${px}px, ${py * 0.5}px, 0)`;
+            }
+
+            function onMove(e) {
+                const rect = hero.getBoundingClientRect();
+                const x = (('touches' in e) ? e.touches[0].clientX : e.clientX) - rect.left;
+                const y = (('touches' in e) ? e.touches[0].clientY : e.clientY) - rect.top;
+                const dx = (x / rect.width) * 2 - 1;   // -1 .. 1
+                const dy = (y / rect.height) * 2 - 1;  // -1 .. 1
+                setVars(dx, dy);
+            }
+
+            function reset() { setVars(0, 0); }
+
+            hero.addEventListener('mousemove', onMove);
+            hero.addEventListener('touchmove', onMove, { passive: true });
+            hero.addEventListener('mouseleave', reset);
+            hero.addEventListener('touchend', reset);
+        })();
+
+
+
+
+        
+ 
+        (function() {
+            const body = document.body;
+            const preloader = document.getElementById('scp-preloader');
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const start = performance.now();
+            const MIN_SHOW = 700;      // ms minimum show time for smoothness
+            const MAX_WAIT = 4000;     // ms fallback to avoid hanging
+
+            function hidePreloader() {
+                const elapsed = performance.now() - start;
+                const wait = Math.max(0, MIN_SHOW - elapsed);
+                window.setTimeout(() => {
+                    if (preloader) preloader.classList.add('hidden');
+                    body.classList.remove('scp-preloading');
+                }, wait);
+            }
+
+            // Hide on full load, with fallback
+            let done = false;
+            window.addEventListener('load', () => { if (!done) { done = true; hidePreloader(); } }, { once: true });
+            window.setTimeout(() => { if (!done) { done = true; hidePreloader(); } }, MAX_WAIT);
+
+            // ------------------------------
+            // Generic Scroll Reveal Utility
+            // ------------------------------
+            const candidatesSelectors = [
+                '.hero-section .scp-hero-wrapper',
+                '.mission-card',
+                '.scp-brand-trust .brand-item',
+                '.feature-card',
+                '.modern-tech-section .tech-category',
+                '.pricing-card',
+                '.scp-featured-testimonial',
+                '.scp-compact-testimonial',
+                '.portfolio-section .project-card',
+                '.scp-process-section .process-step',
+                '.scp-contact-form-card',
+                '.scp-contact-info-card'
+            ];
+
+            function markRevealTargets() {
+                const nodes = document.querySelectorAll(candidatesSelectors.join(','));
+                nodes.forEach((el, i) => {
+                    if (!el.hasAttribute('data-reveal')) {
+                        el.setAttribute('data-reveal', '');
+                        // stagger within groups
+                        el.style.setProperty('--sr-delay', ((i % 8) * 60) + 'ms');
+                    }
+                });
+            }
+
+            function initScrollReveal() {
+                if (prefersReduced) {
+                    // Show everything immediately
+                    document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('in-view'));
+                    return;
+                }
+
+                const io = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in-view');
+                            obs.unobserve(entry.target); // reveal once
+                        }
+                    });
+                }, { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
+
+                document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+            }
+
+            // Setup after DOM ready
+            document.addEventListener('DOMContentLoaded', () => {
+                markRevealTargets();
+                initScrollReveal();
+            });
+        })();
+ 
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                if (prefersReduced) {
+                    document.body.classList.add('page-loaded');
+                    return;
+                }
+                // Ensure initial CSS state paints before toggling for smooth transitions
+                requestAnimationFrame(() => document.body.classList.add('page-loaded'));
+            } catch (e) {
+                document.body.classList.add('page-loaded');
+            }
+        });
+
+        // Logo switching handled globally by site.js
+
+        // Align the fixed dashboard top with the hero badge top (runs once and on resize)
+        (function() {
+            const setDashTop = () => {
+                try {
+                    const badge = document.querySelector('.scp-hero-badge');
+                    if (!badge) return;
+                    // top relative to viewport; fixed element also uses viewport, so use rect.top
+                    const rect = badge.getBoundingClientRect();
+                    // Optional: account for a fixed navbar height if needed
+                    const navbar = document.querySelector('.navbar');
+                    let offset = 0;
+                    if (navbar) {
+                        const navStyles = window.getComputedStyle(navbar);
+                        if (navStyles.position === 'fixed') {
+                            offset = 0; // keep 0 to align exactly; adjust if overlap appears
+                        }
+                    }
+                    const topPx = Math.max(0, Math.round(rect.top + offset));
+                    document.documentElement.style.setProperty('--dashboard-top', topPx + 'px');
+                } catch (e) { /* no-op */ }
+            };
+            window.addEventListener('load', setDashTop, { once: true });
+            window.addEventListener('resize', () => {
+                // debounce a bit
+                clearTimeout(window.__scpDashTopT);
+                window.__scpDashTopT = setTimeout(setDashTop, 120);
+            });
+        })();
+
+        // Keep dashboard visible only while the hero is in view (prevents it from scrolling over next sections)
+        (function() {
+            const wrapper = document.querySelector('.scp-fixed-dashboard-wrapper');
+            const hero = document.querySelector('.hero-section');
+            if (!wrapper || !hero) return;
+            const setVisible = (v) => {
+                wrapper.style.display = v ? 'block' : 'none';
+                wrapper.style.pointerEvents = v ? 'auto' : 'none';
+                wrapper.setAttribute('aria-hidden', v ? 'false' : 'true');
+                if ('inert' in wrapper) wrapper.inert = !v;
+            };
+            const syncVisibility = () => {
+                // Use absolute positions for robust logic
+                const rect = hero.getBoundingClientRect();
+                const heroTop = rect.top + window.scrollY;
+                const heroBottom = heroTop + rect.height;
+                const y = window.scrollY;
+                const navH = (document.querySelector('.navbar')?.offsetHeight) || 0;
+                const bufferTop = 0;      // show once we enter hero
+                const bufferBottom = 220; // hide before the wave/next section
+                const visible = (y + navH + bufferTop) >= heroTop && y < (heroBottom - bufferBottom);
+                setVisible(visible);
+            };
+            window.addEventListener('load', syncVisibility, { once: true });
+            window.addEventListener('scroll', syncVisibility, { passive: true });
+            window.addEventListener('resize', syncVisibility);
+        })();
+    </script>
+
+
+
+</body>
+</html>
+
